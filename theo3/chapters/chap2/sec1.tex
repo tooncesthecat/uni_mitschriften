@@ -1,0 +1,83 @@
+\section{Wellenfunktion, Schrödingergleichung und die Postulate der
+Quantenmechanik} % (fold)
+\label{sec:Wellenfunktion,_Schrödingergleichung_und_die_Postulate_der_Quantenmech}
+\subsubsection{1. Postulat (Wellenfunktion, Zustand)} % (fold)
+\label{ssub:1._Postulat_(Wellenfunktion,_Zustand)}
+Der Zustand eines \qmn Systems wird durch eine Wellenfunktion
+(Zustandsfunktion/Zustand) $\Psi$ beschrieben, die i.A von den Koordinaten
+aller Teilchen un der Zeit abhängt.
+
+Z.B ein Teilchen $\vec{r}=(x,y,z) \quad \Psi(x,y,z,t)= \Psi(\vec{x},t)$
+
+Die Wahrscheinlichkeit das Teilchen (zur Zeit $t$) im Bereich $V \in
+\mathbb{R}^3$ zu finden ist gegeben durch
+\begin{equation*}
+    \int_V d^3 r \lv \Psi(\vec{r},t)\rv^2
+\end{equation*}
+
+Für infinitesimale Volumen $dV$ ist $\lv \Psi(\vec{r},t)\rv^2 dV$ die
+Wahrscheinlichkeit das Teilchen in $dV$ um $\vec{r}$ zu finden.
+    
+$\varphi(\vec{r},t) = \lv \Psi(\vec{r},t)\rv^2$ ist die Wahrscheinlichkeitsdichte.
+
+Es gilt die Normierungsbedingung
+\begin{equation*}
+    \int_{\mathbb{R}^3} d^3 r \lv \Psi(\vec{r},t)\rv^2=1
+\end{equation*}
+fall $\Psi$ quadratintegrabel.
+\begin{bem}
+    \item 
+    Systeme mit $n$ Teilchen $\vec{r}_j = (x_j),y_j,z_j) \quad j=1 \ldots
+    n \rightarrow \Psi(\vec{r}_1, \ldots, \vec{r}_n,t)$
+
+    $H_2$ Molekül (2 Elektronen, 2 Protonen): $\Psi(r_1,r_2,r_3,r_4,t)$ 
+    \item
+    i.A $\Psi(\vec{r},t) \in \mathbb{C}$
+    \item
+    $\Psi$ ist bist auf globalen Phasenfaktor eindeutig 
+    \begin{align*}
+        \tilde{\Psi}(\vec{r},t)=
+        e^{ia} \Psi(\vec{r},t) \\
+        \tilde{\varphi}=\lv \tilde{\Psi} \rv^2 = \lv \Psi \rv^2 = \varphi
+    \end{align*}
+    \item Mathe: $\Psi \in W$, $W$ Vektorraum (Hilbertraum)
+
+    Es gilt Superpositionsprinzip: $\Psi_1, \Psi_2 \in W$ mögliche
+    Systemzustände, dann auch $c_1 \Psi_1 + c_2 \Psi_2 \in W$, $c_1,c_2 \in
+    \mathbb{C}$. 
+
+    Betrachte Teilchen mit Masse $m$, Geschwindigkeit $v$:
+    %Bild
+
+    Mit
+    $k=\frac{2\pi}{\lambda},\lambda=\frac{h}{mv},k=\frac{mv}{\frac{h}{2\pi}}$
+    folgt
+    \begin{equation*}
+        e^{ikz} = e^{\frac{i}{\hbar}mvz}
+    \end{equation*}
+    Rechts:
+    \begin{align*}
+        \Psi(x) &= \Psi_1(x) + \Psi_2(x) \\
+        \Psi_{1/2}(x) &= n e^{\frac{imv}{2\hbar L}\left(x \pm \frac{d}{2}\right)^2} \\
+        &= n e^{\frac{imv}{2\hbar L}\left(x^2 + \frac{d}{r}\right)} \
+        e^{\pm \frac{imvxd}{2\hbar L}}
+    \end{align*}
+    Intensität am Schirm $\sim \varphi(x)$:
+    \begin{align*}
+       \varphi(x) &= \lv \Psi(x) \rv^2 = \lv \Psi_1(x) + \Psi_2(x)\lv^2 \\
+                &= \lv \Psi_1(x) \rv^2 + \lv \Psi_2(x) \rv^2 \
+                    + 2\Re \left( \Psi_1(x) \Psi_2^*(x) \right) \\
+                &= \lv n \rv^2  \left( 1 + 1 + 2\Re \left( e^{-2i \
+                    \frac{mvxd}{2\hbar L}}\right) \right)\\
+                &= 2 \lv m \rv^2 \left( 1 + \cos \left(\frac{mvd}{\hbar L}x \right) \right)
+    \end{align*}
+    \item \qme Wahrscheinlichtkeitsbeschreibung
+    \begin{equation*}
+        \varphi(\vec{r},t) = \lv \Psi(\vec{r},t)\rv^2
+    \end{equation*}
+    Aussage über eine Vielzahl von Messungen an identischen Systemen.
+
+    $\longrightarrow$ Indeterminisums
+\end{bem}
+% subsubsection 1. Postulate (Wellenfkt, Zustand) (end)
+% section Wellenfunktion, Schrödingergleichung und die Postulate der Quantenmech (end)

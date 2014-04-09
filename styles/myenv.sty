@@ -1,0 +1,13 @@
+\ProvidesPackage{myenv}
+
+\newenvironment{erl}[1]
+{ \newline \textbf{{#1}} }
+{}
+
+\newenvironment{bei}
+{ \newline \textbf{Beispiele:} \begin{enumerate}}
+{ \end{enumerate}}
+
+\newenvironment{bem}
+{ \newline \textbf{Bemerkung:} \begin{enumerate}}
+{ \end{enumerate}}

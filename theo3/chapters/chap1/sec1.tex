@@ -1,0 +1,40 @@
+\section{Wiederholung klassische Mechanik} % (fold)
+\label{sec:Wiederholung_klassische_Mechanik}
+Massepunkt in $1D$: $x(t)$ \\
+$m \cd x(t) = F = -\frac{dU}{dx}$ \quad Impuls $p(t) = m \dot{x}(t)$ \\
+$x(0) , p(0)$ bekannt $\longrightarrow$ $x(t), p(t)$ bestimmt für alle $t >0$. \\
+Klassische Mechanik: kausal, deterministisch \\
+Quantenmechanik: kausal, nicht deterministisch
+\begin{erl}{Lagrange-Formalismus}
+    \begin{equation*}
+        L=T-v= \frac{1}{2} m \dot{x}^2 - V(x)
+    \end{equation*}    
+
+    Euler-Lagrange-Gleichung:
+
+    \begin{align*}
+        \frac{d}{dt} \frac{\partial L}{\partial \dot{x}} - \frac{\partial L}{\partial x} &= 0 \\
+        \frac{d}{dt} m \dot{x} - \frac{\partial V}{\partial x} &= 0 \Rightarrow mx = - \frac{\partial V}{\partial x}
+    \end{align*}
+\end{erl}
+\begin{erl}{Hamilton-Formalismus}
+    \begin{equation*}
+        p = \frac{\partial L}{\partial\dot{x}} = m \dot{x}
+    \end{equation*}
+    Hamilton-Funktion:
+    \begin{align*}
+        H(x,p)
+        &=
+        \frac{\partial L}{\partial \dot{x}} \dot{x} - L = p \frac{p}{m} - 
+            \left[ \underbrace{\frac{1}{2} m \dot{x}^2}_{\frac{p^2}{2m}} - V(x)
+            \right] \\
+        &=
+        \frac{1}{2m} p^2 + V(x) = T + V = E_{tot}
+    \end{align*}
+    Bewegungsgleichung:
+    \begin{align*}
+        \dot{x} &= \frac{\partial H}{\partial p} = \frac{p}{m} \\
+        \dot{p} &= - \frac{\partial H}{\partial x} = - \frac{\partial
+        V}{\partial x}
+    \end{align*}
+\end{erl}
