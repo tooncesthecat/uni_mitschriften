@@ -13,19 +13,19 @@ Quantenmechanik: kausal, nicht deterministisch
     Euler-Lagrange-Gleichung:
 
     \begin{align*}
-        \frac{d}{dt} \frac{\partial L}{\partial \dot{x}} - \frac{\partial L}{\partial x} &= 0 \\
-        \frac{d}{dt} m \dot{x} - \frac{\partial V}{\partial x} &= 0 \Rightarrow mx = - \frac{\partial V}{\partial x}
+        \frac{d}{dt} \frac{\p L}{\p \dot{x}} - \frac{\p L}{\p x} &= 0 \\
+        \frac{d}{dt} m \dot{x} - \frac{\p V}{\p x} &= 0 \Rightarrow mx = - \frac{\p V}{\p x}
     \end{align*}
 \end{erl}
 \begin{erl}{Hamilton-Formalismus}
     \begin{equation*}
-        p = \frac{\partial L}{\partial\dot{x}} = m \dot{x}
+        p = \frac{\p L}{\p\dot{x}} = m \dot{x}
     \end{equation*}
     Hamilton-Funktion:
     \begin{align*}
         H(x,p)
         &=
-        \frac{\partial L}{\partial \dot{x}} \dot{x} - L = p \frac{p}{m} - 
+        \frac{\p L}{\p \dot{x}} \dot{x} - L = p \frac{p}{m} - 
             \left[ \underbrace{\frac{1}{2} m \dot{x}^2}_{\frac{p^2}{2m}} - V(x)
             \right] \\
         &=
@@ -33,8 +33,8 @@ Quantenmechanik: kausal, nicht deterministisch
     \end{align*}
     Bewegungsgleichung:
     \begin{align*}
-        \dot{x} &= \frac{\partial H}{\partial p} = \frac{p}{m} \\
-        \dot{p} &= - \frac{\partial H}{\partial x} = - \frac{\partial
-        V}{\partial x}
+        \dot{x} &= \frac{\p H}{\p p} = \frac{p}{m} \\
+        \dot{p} &= - \frac{\p H}{\p x} = - \frac{\p
+        V}{\p x}
     \end{align*}
 \end{erl}

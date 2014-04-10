@@ -7,10 +7,12 @@ move: vorlesungs_mitschrift_theo.pdf
 		mv vorlesungs_mitschrift_theo.pdf ../pdf
 
 clean:
-		rm *.log
-		rm *.out
-		rm *.aux
-		rm *.toc
+		-rm *.log
+		-rm *.lof
+		-rm *.lot
+		-rm *.out
+		-rm *.aux
+		-rm *.toc
 
 .PHONY: all comp 
 .SILENT: comp clean
