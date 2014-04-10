@@ -11,5 +11,5 @@ im root directory. Oder
     make ep
     make clean
 im root directory (kompiliert die einzelnen Ordner). Oder
-    make comp
+    make all
 in den ep4/ oder theo3/ directories.

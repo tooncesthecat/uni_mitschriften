@@ -81,6 +81,13 @@ fall $\Psi$ quadratintegrabel.
 \end{bem}
     
 % subsubsection 1. Postulat (Wellenfkt, Zustand) (end)
+Messbare Größen in der klassischen Mechanik: Funktion auf dem Phasenraum:
+\begin{description}
+    \item[Funktion] $A(x,p)$
+    \item[Energie] $E_{kin} = \frac{p^2}{2m} \rar E=H(x,p)$
+    \item[Drehimpuls] $\vec{L} = \vec{r} \times \vec{p}$
+\end{description}
+
 \subsubsection{2. Postulat} % (fold)
 \label{ssub:2._Postulat}
 Jeder messbaren Gröse (Observable) $A$ ist ein (linear, hermetischer) Operator
@@ -92,8 +99,67 @@ $A(x,p)$ dier ERsetzung durchführt.
 \end{align*}
 Analog $3D$
 \begin{align*}
-    p_z \rar \h{p_x} = \frac{\hbar}{i}\frac{\p}{\p x} & x \rar \h{x} &\coloneqq x \\
+    p_z \rar \h{p_y} = \frac{\hbar}{i}\frac{\p}{\p y} &&  y \rar \h{y} \coloneqq y \\
+    p_z \rar \h{p_z} = \frac{\hbar}{i}\frac{\p}{\p z} &&  z \rar \h{z} \coloneqq z 
 \end{align*}
+\begin{bem}
+    \item hermetische Operatoren: Mathe lineare Abbildungen $l \cl W \rar W$.
 
+    Notation QM:
+    \begin{align*}
+        \angstrom \cl W \rar W \\
+        \angstrom \Psi(\vec{r},t) = \varphi(\vec{r},t)
+    \end{align*}
+    \begin{bei}
+        \item{Ortsoperator}
+        \begin{align*}
+            \h{x}\Psi(x,y,z) &= x \Psi(x,y,z)\\
+            \h{y}\Psi(x,y,z) &= y \Psi(x,y,z)
+        \end{align*}
+        \item{Impulsoperator}
+        \begin{equation*}
+            \tag{Differentialoperator}
+            \h{p_x} \Psi (x,y,z) = \frac{\hbar}{-i}\frac{\p}{\p x}\Psi (x,y,z)
+        \end{equation*}
+        \item{kinetische Energie:} 
+            \begin{align*}
+                \text{Klassisch: } & T= \frac{p^2}{2m} \\
+                \text{\QM: } & \h{T} = T(\h{x},\h{p}) 
+                = \frac{1}{2m}\h{p_x}^2 
+                = \frac{1}{2m}\frac{\hbar^2}{i^2}\frac{\p^2}{\p x^2} \\
+                \h{T}\Psi(x)&= -\frac{\hbar^2}{2m}\frac{\p^2}{\p x^2}\Psi
+            \end{align*}
+            \begin{align*}
+                \text{$3D$: } T &= \frac{1}{2m}\lk p_x^2, + p_y^2 + p_z^2 \rk \\
+                \h{T} &= \frac{1}{2m}\lk \h{p}_x^2 + \h{p}_y^2 + \h{p}_z^2\rk\\
+                &= -\frac{\hbar^2}{2m}\lk \frac{\p^2}{\p x^2}+\frac{\p^2}{\p 
+                y^2}+\frac{\p^2}{\p z^2} \rk = \frac{\hbar^2}{2m}\Delta
+            \end{align*}
+        \item{Energie: Hamiltonoperator}
+            \begin{align*}
+                \text{klassisch: Hamiltonfunktion: } &
+                H(r,p)=\frac{p^2}{m}+V(x)\\
+                \text{\QM: } &\h{H} = H (\h{x},\h{p_1})=
+                                \frac{1}{2m}\h{p_x}^2 + V(\h{x}) \\
+                    &= -\frac{\hbar}{2m}\frac{\p^2}{\p x^2}+V(x)
+            \end{align*}
+            \begin{equation*}
+                \h{H}\Psi(x) = \frac{\hbar^2}{2m}\frac{\p^2}{\p x^2}+V(x)\Psi(x)
+            \end{equation*}
+            \begin{equation*}
+                \text{$3D$: } \frac{1}{2m}\lk \h{p_x}^2 + \h{p_y}^2 + \h{p_z}^2
+                \rk + V (\h{x},\h{y},\h{z}) = - \frac{\hbar^2}{2m} \Delta + V (x,y,z)
+            \end{equation*}
+    \end{bei}
+\end{bem}
 % subsubsection 2. Postulat (end)
 % section Wellenfunktion, Schrödingergleichung und die Postulate der Quantenmech (end)
+\subsubsection{3.Postulat (Mittelwert, Erwartungswert)} % (fold)
+\label{ssub:3.Postulat_(Mittelwert,_Erwartungswert)}
+Der Mittelwert (Erwartungswert) einer physikalischen Observablen $A$ für ein
+System im Zustand $\Psi$ ist
+\begin{equation*}
+    \left\langle \h{A} \right\rangle(t) = \int d^3r \Psi^* (\vec{r},t) \h{A} \Psi(\vec{r},t)
+\end{equation*}
+% subsubsection 3.Postulat (Mittelwert, Erwartungswert) (end)
+
