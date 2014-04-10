@@ -1,7 +1,7 @@
 \section{Wellenfunktion, Schrödingergleichung und die Postulate der
 Quantenmechanik} % (fold)
 \label{sec:Wellenfunktion,_Schrödingergleichung_und_die_Postulate_der_Quantenmech}
-\subsubsection{1. Postulat (Wellenfunktion, Zustand)} % (fold)
+\subsection{1. Postulat (Wellenfunktion, Zustand)} % (fold)
 \label{ssub:1._Postulat_(Wellenfunktion,_Zustand)}
 Der Zustand eines \qmn Systems wird durch eine Wellenfunktion
 (Zustandsfunktion/Zustand) $\Psi$ beschrieben, die i.A von den Koordinaten
@@ -80,7 +80,7 @@ fall $\Psi$ quadratintegrabel.
     $\longrightarrow$ Indeterminisums
 \end{bem}
     
-% subsubsection 1. Postulat (Wellenfkt, Zustand) (end)
+% subsection 1. Postulat (Wellenfkt, Zustand) (end)
 Messbare Größen in der klassischen Mechanik: Funktion auf dem Phasenraum:
 \begin{description}
     \item[Funktion] $A(x,p)$
@@ -88,7 +88,7 @@ Messbare Größen in der klassischen Mechanik: Funktion auf dem Phasenraum:
     \item[Drehimpuls] $\vec{L} = \vec{r} \times \vec{p}$
 \end{description}
 
-\subsubsection{2. Postulat} % (fold)
+\subsection{2. Postulat} % (fold)
 \label{ssub:2._Postulat}
 Jeder messbaren Gröse (Observable) $A$ ist ein (linear, hermetischer) Operator
 $\h{A}$ zugeordnet. Man erhält $\h{A}$ indem man im klassischen Ausdruck
@@ -152,14 +152,204 @@ Analog $3D$
             \end{equation*}
     \end{bei}
 \end{bem}
-% subsubsection 2. Postulat (end)
+% subsection 2. Postulat (end)
 % section Wellenfunktion, Schrödingergleichung und die Postulate der Quantenmech (end)
-\subsubsection{3.Postulat (Mittelwert, Erwartungswert)} % (fold)
-\label{ssub:3.Postulat_(Mittelwert,_Erwartungswert)}
+\subsection{3. Postulat (Mittelwert, Erwartungswert)} % (fold)
+\label{ssub:3. Postulat_(Mittelwert,_Erwartungswert)}
 Der Mittelwert (Erwartungswert) einer physikalischen Observablen $A$ für ein
 System im Zustand $\Psi$ ist
 \begin{equation*}
     \left\langle \h{A} \right\rangle(t) = \int d^3r \Psi^* (\vec{r},t) \h{A} \Psi(\vec{r},t)
 \end{equation*}
-% subsubsection 3.Postulat (Mittelwert, Erwartungswert) (end)
 
+\begin{bem}
+    \item{Beispiel}: $\Psi(x) = \frac{1}{\sigma^2 \pi}^{\frac{1}{4}} \
+            e^{\frac{-\lk x-x_0 \rk^2 }{2 \sigma}}$
+
+    Normierung: $\int_{-\infty}^{\infty} dx \lv \Psi(x)\rv^2 = 1$
+
+    \begin{erl}{Mitterlwert der Ortsmessung:}
+    \begin{align*}
+        \left\langle \h{x} \right\rangle
+        &=
+        \int_{-\infty}^{\infty} dx \Psi^*(x)
+        \underbrace{\h{x} \Psi(x)}_{x\Psi(x)} 
+        =
+        \int_{-\infty}^{\infty} dx
+        \overbrace{\lv \Psi(x)\rv^2}^{\varphi(x)}x \\
+        \left\langle \h{x} \right\rangle
+        &=
+        \int_{-\infty}^{\infty} dx \underbrace{x}_{x=x-x_0} \frac{1}{\lk \sigma \pi \rk}^{\frac{1}{4}} e^{-\frac{\lk x - x_0 \rk^2}{\sigma^2}}
+        = x_0
+    \end{align*}
+    \end{erl}
+    \begin{erl}{Mittelwert bei Impulsmessung}
+    \begin{align*}
+        \left\langle \h{p} \right\rangle
+        &=
+        \int_{-\infty}^{\infty} dx \Psi^*(x)\h{p}(x)\Psi(x)\\
+        &=
+        \int_{-\infty}^{\infty} \Psi^* \frac{\hbar}{i}
+        \frac{\p}{\p x}\Psi(x)
+    \end{align*}    
+    und mit
+    \begin{align*}
+       \frac{\p}{\p x}\Psi(x) 
+       &=
+       \frac{1}{{\lk \sigma^2 \pi
+       \rk}^{\frac{1}{4}}} \lk - \frac{\lk x- x_0 \rk}{\sigma^2}\rk 
+       e^{- \frac{\lk x - x_0 \rk^2}{2\sigma^2}}
+    \end{align*}
+    folgt
+    \begin{align*}
+        \left\langle \h{p} \right\rangle
+        &=
+        \frac{\hbar}{i} \frac{1}{{\lk \sigma^2 \pi \rk}^{\frac{1}{2}}}
+        \lk - \frac{1}{\sigma^2}\rk  \int_{-\infty}^{\infty} dx \lk x - x_0 \rk 
+        e^{\frac{- \lk x - x_0 \rk^2}{\sigma^2}} = 0
+    \end{align*}
+    \end{erl}
+    \item
+    $\left\langle \h{A} \right\rangle \in \mathbb{R}$ $\rar$ Operator $\h{A}$
+    hermitisch.
+\end{bem}
+% subsection 3. Postulat (Mittelwert, Erwartungswert) (end)
+\subsection{4. Postulat (Messwert, Wahrscheinlichkeit)} % (fold)
+\label{ssub:4._Postulat_(Messwert,_Wahrscheinlichkeit)}
+Jede einzelne Messung der Observablen $A$ kann nur einen der Eigenwerte $a_n$
+des Operators $\h{A}$ liefer, definiert durch
+\begin{equation*}
+    \tag{Eigenwertgleichung}
+    \h{A}\varphi_n(\vec{r}) = a_n \varphi_n(\vec{r})
+\end{equation*}
+$\varphi_n$ Eigenfunktion von $\h{A}$ zum Eigenwert $a_n$.
+
+Die Wahrscheinlichkeit $W_n$ bei einer Messung der Observablen $A$ an einem
+System im Zustand $\Psi$ den Eigenwert $a_n$ zu finden, ist gegeben durch
+\begin{equation*}
+    W_n = \lv \int d^3 r \varphi_n^*(\vec{r}) \Psi(\vec{r},t)\rv^2
+\end{equation*}
+Nach der Messung ist das System in dem eigenzustand $\varphi_n$, der dem
+gemessenem Eigenwert entspricht.
+\begin{bem}
+    \item 
+    Annahme $\varphi_n$ normiert $\lk \int d^3 r \lv \varphi_n
+    (\vec{r})\rv^2 =1 \rk$
+    \item
+    In vielen Fällen: Eigenwert $a_n$ diskret $\rar$ Messgröße $A$ quantisiert
+
+    Beispiel: mögliche Energien des $H$-Atoms
+    \begin{equation*}
+        E_n = - \frac{R}{n^2} \qquad R \approx 13.6eV, n \in \mathbb{R}
+    \end{equation*}
+    \item{Reduktion der Wellenfunktion}
+    \QM: System wird i.A durch Messung verändert
+    \begin{equation*}
+        \Psi \xrightarrow[\text{Messung von $A$ mit Ergebnis $a_n$}]{} \varphi_n
+    \end{equation*}
+    $\rar$ sofortige weitere Messung von $A$ liefert wieder $a_n$.
+
+    Zustand des Systems nach Messung $\varphi_n$:
+    \begin{equation*}
+        W_n = \lv \int d^3 r \varphi_n^*(\vec{r}) \Psi(\vec{r}) \rv^2
+            = \lv \underbrace{\int d^3 r \varphi_n^*(\vec{r}) 
+                        \varphi_n(\vec{r})}_{\int d^3 r \lv \varphi_n
+                        (\vec{r}) \rv^2 = 1} \rv^2= 1
+    \end{equation*}
+    \item
+    $\lv \Psi(x)\rv^2$ Wahrscheinlichkeitsdichte für messung des Ortes $x$.
+
+    \begin{erl}{Verallgemeinerte Eigenfunktion des Operators:}
+     \begin{align*}
+        \h{x}\varphi(x) &= \xi \varphi(x) \\
+        x \varphi(x) &= \xi \varphi(x) \qquad \lk x-\xi \rk  f(x) = 0 \quad \forall x \\
+        \varphi_\xi (x) &= \delta \lk x - \xi \rk 
+     \end{align*}
+     \begin{align*}
+         W_\xi 
+         &=
+         \lv \int dx \varphi_\xi^* (x) \Psi(x) \rv^2 \\
+         &=
+         \lv \int dx \delta \lk x - \xi \rk \Psi(x) \rv^2 
+         = \lv \Psi(\xi)\rv^2
+     \end{align*}
+    \end{erl}    
+    \item
+    Postulate $3$ und $4$ sind nicht unabhängig ($P4 \rar P3$)
+    \begin{align*}
+        \left\langle \h{x} \right\rangle
+        &=
+        \int dx \varphi(x)x = \int dx \lv \Psi(x) \rv^2 \\
+        &=
+        \int dx \Psi^*(x) x \Psi(x) = \int dx \Psi^*(x) \h{x} \Psi(x) \\
+        &=
+        \left\langle \h{x} \right\rangle
+    \end{align*}
+\end{bem}
+% subsection 4. Postulat (Messwert, Wahrscheinlichkeit) (end)
+\subsection{5. Postulat (Schrödingergleichung)} % (fold)
+\label{sub:5._Postulat_(Schrödingergleichung)}
+Die Zeitentwicklung der Zustände in der \QM wird durch die (zeitabhängige)
+Schrödingergleichung bestimmt
+\begin{equation*}
+    \boxed{
+        i \hbar  \frac{\p }{\p t } \Psi(\vec{r},t) = \h{H}\Psi(\vec{r},t)
+        }
+\end{equation*}
+Dabi ist $\h{H}$ der Hamiltonoperator des Systems
+\begin{bem}
+    \item
+    hier: nichtrelativisitsche \QM ($v <<  c$)
+    \item
+    \begin{align*}
+        \h{H} &= \lk - \frac{\hbar}{2m}\frac{\p^2}{\p x}^2 + V(x) \rk \Psi(x,t) \\
+        i\hbar \frac{\p}{\p t} \Psi(x,t) 
+        &=
+        - \frac{\hbar^2}{2m} \frac{\p^2 \Psi}{\p x^2} + V(x)
+        \Psi(x,t)
+    \end{align*}    
+    Partielle DGL:
+    \begin{equation*}
+        \Psi(x,t_0) \xrightarrow[Löss]{über ???} \Psi(x,t)
+    \end{equation*}
+    \item{Plausibilität der Schrödinger Gleichung}
+    Exp: Materie hat Welleneigenschaften $\rar$ Wellengleichung
+
+    Elektrodynamik: 
+    
+    \begin{align*}
+    \text{ebene Welle:} &\qquad\Psi(x,t)=Ae^{i \lk kx - \omega t \rk } \\
+    \text{Dispersionsrelation} &\qquad\omega = kc 
+    \end{align*}
+    \begin{equation*}
+        \frac{\p^2}{\p t^2} \Psi= - \omega^2 \Psi
+        = - c^2 k^2 \Psi - c^2 \frac{\p^2}{\p x^2} \Psi
+    \end{equation*}
+    Wellengleichung in \QM?
+    \begin{align*}
+        \Psi(x,t)&= A e^{i \lk kx - \omega \rk} \\
+        \text{de Broglie:} \qquad \lambda &= \frac{k}{p}
+        \rar k = \frac{2\pi}{\lambda}=\frac{p}{\frac{k}{2\pi}} = \frac{p}{\hbar} \\
+        \rar p &= \hbar k
+    \end{align*}
+    $E= \hbar \omega$ freies Teilchen $E= \frac{p}{2m}$
+    \begin{equation*}
+        \Rar \omega 
+        = \frac{E}{\hbar}
+        = \frac{1}{2m} \frac{p^2}{\hbar} =
+        \boxed{
+            \frac{tk^2}{2m} = \omega(k)     
+        }
+    \end{equation*}
+    \begin{align*}
+        \frac{d^2}{d t^2 } \Psi 
+        &=
+        - k^2 \Psi = \frac{2m\omega}{\hbar}\Psi
+        =-\frac{2m}{\hbar} \frac{1}{-i} \frac{d }{dt} \Psi \\
+        \Rar i \hbar \frac{d \Psi}{dt} 
+        &= - \frac{\hbar^2}{2m} \frac{\p^2 \Psi}{\p t^2}
+        =\underbrace{\h{H}\Psi}_{\h{H}=T}
+    \end{align*}
+\end{bem}
+
+% subsection 5. Postulat (Schrödingergleichung) (end)
