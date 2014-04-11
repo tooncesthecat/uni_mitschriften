@@ -3,10 +3,17 @@
 \newenvironment{erl}[1]
 { \textbf{{#1}} }
 {}
+\newenvironment{erlit}[1]
+{ \textbf{{#1}} \begin{itemize}}
+{\end{itemize}}
 
 \newenvironment{bei}
 { \textbf{Beispiele:} \begin{enumerate}}
 { \end{enumerate}}
+
+\newenvironment{beis}
+{ \textbf{Beispiel:}} 
+{}
 
 \newenvironment{bem}
 { \textbf{Bemerkungen:} \begin{enumerate}}
