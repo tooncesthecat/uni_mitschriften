@@ -1,0 +1,100 @@
+\section{Bestimmung der Atomgröße} % (fold)
+\label{sec:Bestimmung_der_Atomgroesse}
+Verschiedene experimentelle Verfahren erlauben es, die Atomgröße abzuschätzen
+
+\subsection{Bestimmung aus dem Kovulemen der v.d. Waals Gleichung} % (fold)
+\label{sub:Bestimmung_aus_dem_Kovulemen_der_v.d._Waals_Gleichung}
+Ein reales Gas wird in guter Nährung durch die van-der-Waals'sche
+Zustandsgleichung beschrieben:
+\begin{equation*}
+    \lk p + \frac{a}{V_M^2}\rk \lk V_M -b \rk = R \cd T \quad \text{Für Molzahl
+    $n=1$}
+\end{equation*}
+\begin{itemize}
+    \item $a$: Binnendruck-Konstante
+    \item $b=4 N_A V_a$ gibt das Vierfache des Eigenvolumens aller $N_A$ Atome
+    im Molvolumen $V_M$ an.
+\end{itemize}
+Durch Bestimmung von $b$ aus der Messung $p(T)$ bei konstantem Gasvolumen $V_M$
+ergibt sich:
+\begin{equation*}
+    \boxed{
+        V_a = \frac{b}{4 \cd N_A}
+        }
+\end{equation*}
+% subsection Bestimmung aus dem Kovulemen der v.d. Waals Gleichung (end)
+
+\subsection{Abschätzung aus dem Transportkoeffizienten in Gasen} % (fold)
+\label{sub:Abschätzung_aus_dem_Transportkoeffizienten_in_Gasen}
+Wie oben gezeigt, hängen die Transportkoeffizienten in Gasen für den
+Teilchenstrom $j_x$ (Diffusionskonstande $D$), Wärmestrom $Q$
+(Wärmeleitfähigkeit $\lambda$) und Impulsstrom $j_p$ (Viskosität $\eta$) von
+der mittleren freuen Weglänge ab.
+Dabei ist
+\begin{equation*}
+    \Lambda = \frac{1}{n \cd \sigma}=\frac{k_B T}{p \cd \sigma}
+\end{equation*}
+mit $\sigma$ dem Sotßqueerschnitt der Atome. Im Modell starrer Kugeln ist
+\begin{equation*}
+    \sigma = \pi \lk 2r \rk^2
+\end{equation*}
+(allg: $\sigma = \pi (r_1 + r_2)^2$)
+
+Man kann also durch Messung der Transportkoeffizienten und damit von $\Lambda$
+Information über $\sigma$ und damit über $r$ erhalten:
+\begin{beis}
+    \begin{equation*}
+        D = \frac{1}{3} \bar{v} \Lambda 
+        = \frac{1}{3p} \sqrt{\frac{\lk 2 k_B T \rk)^3}{\pi m} \frac{1}{\sigma}}
+    \end{equation*}
+    mit $\bar{v} = \sqrt{\frac{8 k_B T}{\pi m}}l$ und $n= \frac{p}{k_B T}$
+\end{beis}
+% subsection Abschätzung aus dem Transportkoeffizienten in Gasen (end)
+
+\subsection{Beugung von Röntgenstrahlen an Kristallen} % (fold)
+\label{sub:Beugung_von_Röntgenstrahlen_an_Kristallen}
+Interferenz von Röntgenstrahlen an den Netzebenen eines Kristalls kann zur
+Bestimmung von Atomvolumina verwendet werden. Aus dem Abstand $d$ definierter
+Netzebenen in einem Kristall lässt sich das Volumen der Einheitszelle $V_E$ des
+Kristalls bestimmen. Kennt man den Raumfüllungsfaktor $f = \frac{\sum
+V_a}{V_e}$ der Atome, so ergibt sich bei $N_E$ Atomen pro einheitszelle 
+\begin{equation*}
+    \boxed{
+        V_a = f \frac{V_E}{N_E}
+    }
+\end{equation*}
+% subsection Beugung von Röntgenstrahlen and Kristallen (end)
+\subsection{Lenard-Jones Potenzial} % (fold)
+\label{sub:Lenard-Jones_Potenzial}
+Die Methoden $1$ - $3$ geben zwar die gleiche Größenordnung, aber dennoch
+verschiedene Werte für die Atomradien.
+
+Die Unterschiede resultieren aus der unklaren Definition des Atomradius. Bei
+einer starren Kugel ist Radius $r_0$ wohldefiniert. Die realen Atome erzeugen
+einen Stoßquerschnitt jedoch aus einem Wechselwirkungspotenzial, dessen Verlauf
+recht gut durch das Lennard-Jones-Potenzial beschrieben wird:
+\begin{equation*}
+    V(r)= \frac{a}{r^{12}} - \frac{b}{r^6}
+\end{equation*}
+wobei Konstaten $a$ und $b$ von der Atomsorte abhängig sind.
+
+Der Atomradius kann nun durch das Minimum bei
+\begin{equation*}
+    r_m = \lk \frac{2a}{b} \rk^{\frac{1}{6}}
+\end{equation*}
+oder dem Nulldurchgang bei
+\begin{equation*}
+    r_0 = \lk \frac{a}{b} \rk^{\frac{1}{6}}
+\end{equation*}
+definiert werden. Generell haben die Radien von Atomen die Größenordnung $r
+\sim 10^{-10}a m = 1 \angstrom$.
+
+Zur genauen Beschreibung der Aromgröße gibt man den Verlauf $V(r)$ an, Diesen
+erhält man aus Messung der Ablenkung von Atomen bei Stoßprozessen oder aus
+Spektroskopie von Molekülen.
+% subsection Lenard-Jones Potenzial (end)
+
+
+% subsection Bestimmung der Atomgröße (end)
+
+% section Masse, Größe und Struktur der Arome (end)

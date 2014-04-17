@@ -1,0 +1,58 @@
+\section{Das freie Teilchen - Wellenpakete} % (fold)
+\label{sec:Das_freie_Teilchen_-_Wellenpakete}
+Teilchen mit Masse $m$, eindimensional ohne Kräfte.
+\begin{erl}{Hamiltonoperator:}
+     \begin{equation*}
+         \h{H}=\frac{\h{p}^2}{2m}+\underset{=0}{V(\h{x})}=\frac{\h{p}^2}{2m}= -
+         \frac{\hb}{2m}\frac{\p^2}{\p x}
+     \end{equation*}
+\end{erl}
+\begin{erl}{Schrödingergleichung}
+      \begin{equation*}
+          i \hb \frac{\p}{\p t} \Psi(x,t) = \h{H} \Psi(x,t) =
+          -\frac{\hb^2}{2m}\frac{\p^2 \Psi}{\p x^2}
+      \end{equation*}
+\end{erl}
+Separationsansatz $\Psi(x,t) = \varphi(x) \chi(t)$
+\begin{align*}
+    i \hb \varphi \frac{d \chi}{d t} &= -\frac{\hb^2}{2m} \frac{d^2
+    \varphi}{dx^2 } \\
+    &=
+    i \hb \underbrace{\frac{1}{\chi}\frac{d x}{d t}}_{t}
+    =
+    - \frac{\hb^2}{2m} \underbrace{\frac{1}{\varphi} \frac{d^2
+    \varphi}{dx^2}}_{x}
+    = const = E
+\end{align*}
+\begin{gather*}
+     \frac{d \chi }{dt}=- \frac{i}{\hb} E \chi \rar \chi(t) = c
+     e^{-\frac{i}{\hb}E t} \\
+     \underbrace{-\frac{\hb^2}{2m}\frac{d^2}{dx^2}}_{\h{H}}\varphi(x) = E \varphi(x)
+\end{gather*}
+\begin{equation*}
+    \tag*{\text{(stationäre Schrödingergleichung)}}
+    \h{H} \varphi(x) = E \varphi(x)
+\end{equation*}
+$\rar$ Eigenwertgleichung für $\h{H})$; $E$ mögliche Energien.
+
+Lößung: $\varphi(x) = a e^{\pm ikx}$
+\begin{gather*}
+    - \frac{\hb^2}{2m} \frac{d ^2}{d x} \varphi(x)
+    =
+    \frac{\hb^2 k^2}{2m} \varphi = E \varphi
+    \rar \frac{\hb k^2}{2m} = E \qquad E \geq 0 \\
+    k = \frac{1}{\hb} \sqrt{ 2m E} \geq 0
+\end{gather*}
+$\rar$ Energie nicht quantisiert.
+
+Zurück zur Separation:
+\begin{gather*}
+    \Psi(x,t) = c e^{\pm ikx - \frac{i}{\hb} Et}\\
+    \omega = \frac{E}{\hb} = \frac{\hb k^2}{2m} = \omega(k)
+\end{gather*}
+\begin{equation*}
+    \tag*{\text{(Dispersionsrelation)}}
+    \pm ikx - i\omega(k)t = ce
+\end{equation*}
+% section Das freie Teilchen - Wellenpakete (end)
+

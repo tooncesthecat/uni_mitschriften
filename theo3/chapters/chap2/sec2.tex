@@ -1,0 +1,280 @@
+\section{Impulsoperator, Impulseigenfunktion, Impulsraumdarstellung} % (fold)
+\label{sec:Impulsoperator,_Impulseigenfunktion,_Impulsraumdarstellung}
+\begin{equation*}
+    \h{p_x} = \frac{\hbar}{i} \frac{\p}{\p }
+\end{equation*}
+\begin{equation*}
+    \h{\vec{p}}=\frac{\hbar}{i} \vec{\nb}
+\end{equation*}
+\subsection{Konsistenz der Definition} % (fold)
+\label{sub:Konsistenz_der_Definition}
+klassiche Mechanik $p=mv=m \frac{d v}{d t}$
+Betrachte Bewegungsgleichung für Mittelwert
+\begin{equation*}
+    \frac{d }{d }\left\langle \h{x} \right\rangle (t) 
+    =
+    \frac{d }{d }
+\end{equation*}
+% subsection Konsistenz der Definition (end)
+\subsection{Wahrscheinlichkeitsstromdichte mit Kontinuitätsgleichung} % (fold)
+\label{sub:Wahrscheinlichkeitsstromdichte_mit_Kontinuitätsgleichung}
+\begin{gather*}
+     \varphi = \lv \Psi(r,t)\rv^2 \\
+     \frac{\p}{\p t} \varphi(\vec{r},t) = \frac{\p}{\p t} \Psi^*(\vec{r},t)
+     \Psi(r,t) = \frac{\p \Psi^*}{\p t} \Psi + \Psi^* \frac{\p \Psi}{\p t}
+\end{gather*}
+\begin{align*}
+    i \hb \frac{\p \Psi}{\p t} 
+    &= 
+    - \frac{\hbar^2}{2m} \Delta \Psi + \nb \Psi \\
+    - i \hb \frac{\p \Psi^*}{\p t}
+    &=
+    - \frac{\hb^2}{2m} \Delta \Psi^* + \nb \Psi^*
+\end{align*}
+\begin{align*}
+    \frac{\p}{\p t} \varphi
+    &=
+    \frac{1}{-i\hb} \left[ - \frac{\hb^2}{2m} \Delta \Psi^* + \nb \Psi^*\right] \Psi 
+    + \Psi^* \frac{1}{i\hb} \left[ - \frac{\hb^2}{2m} \Delta \Psi + \nb
+    \Psi \right] \\
+    &=
+    \frac{\hb}{2m} \left[ \lk \Delta \Psi^* \rk \Psi - \Psi^* \lk \Delta \Psi
+    \rk \right] \\
+    &=
+    \frac{\hb}{2m} \vec{\nb} \cd \left[ \lk \vec{\nb} \Psi^* \rk \Psi -
+    \Psi^* \vec{\nb} \Psi \right]
+\end{align*}
+\begin{align*}
+    \frac{\p}{\p t} \varphi(\vec{r},t) + \vec{\nb} \cd 
+    \underbrace{\frac{\hb}{2m}\left[\Psi^*(\vec{\nb} \Psi) - \Psi(\vec{\nb}
+    \Psi^*) \right] }_{\vec{j}(\vec{r},t) \quad
+    \text{Wahrscheinlichkeitsstrom}}&= 0 \\
+    \frac{d }{d t} \varphi(\vec{r},t) + \vec{\nb} \cd \vec{j}(\vec{r},t) &= 0
+\end{align*}
+Betrachte Bewegungsgleichung für Mittelwert:
+\begin{align*}
+     \frac{d }{dt} \left\langle \h{x} \right\rangle (t)
+     &= \frac{d }{d t} \int dx \Psi^*(x,t) \h{x} \Psi(x,t)
+     = \frac{d }{d t} \int dx  \Psi^*(x,t) x \Psi(x,t) \\
+     &=
+     \int dx \lk 
+     \underbrace{\frac{\p \Psi^*}{\p t} x \Psi}_{\frac{1}{ \lk -i \hb \rk }
+     \lk -\frac{\hb^2}{2m} \frac{\p \Psi^*}{\p x^2} + \nabla \Psi^* \rk }
+     + 
+     \underbrace{\Psi^* x \frac{\p \Psi}{\p t}}_{\frac{1}{ \lk i \hb \rk } 
+     \lk -\frac{\hb^2}{2m} \frac{\p^2 \Psi}{\p x^2} + \nabla \Psi \rk }
+     \rk \\
+     &=
+     \frac{\hb}{2im} \int dx \lk \frac{\p^2 \Psi^*}{\p x^2}x \Psi 
+     - \Psi^* x \frac{\p^2 \Psi}{\p x^2} \rk  \\
+\end{align*}
+\begin{eins}{NR:}
+     \begin{align*}
+         \int dx \frac{\p^2 \Psi^*}{\p x^2} x \Psi
+         &\underset{PI}{=}
+         \int dx \Psi^* 
+         \underbrace{ \frac{\p^2}{\p x^2}\lk x \Psi \rk}_{\frac{\p}{\p x}\lk -
+         \Psi + x \frac{\p^2 \Psi}{\p x^2}\rk  = 2 \frac{\p \Psi}{\p x} + x
+         \frac{\p^2 \Psi}{\p x^2}}
+     \end{align*}
+     Randerterme verschwinden: $\Psi(x) \underset{x \pm \infty}{\rar} 0$.
+\end{eins}
+\begin{align*}
+     &=
+     \frac{\hb}{2im} \int dx \lk 2 \Psi^* \frac{\p\Psi}{\p x}
+     + \Psi^* x \frac{\p^2 \Psi}{\p x^2}
+     - \Psi^* x \frac{\p^2 \Psi}{\p x^2} \rk \\
+     &=
+     \frac{1}{m} \int dx \Psi^*(x,t) \underbrace{\frac{\hb}{i} \frac{\p}{\p
+     x}}_{= \h{p}_x} \Psi(x,t) \\
+     &=
+     \frac{1}{m} \int dx \Psi^* \h{p}_x \Psi \\
+     &=
+     \frac{1}{m} \left\langle \h{p}_x \right\rangle (t)
+     =
+     \frac{d }{d t} \left\langle \h{x} \right\rangle (t)
+     \rar \text{genau wie klassische Mechanik}
+\end{align*}
+% subsection Wahrscheinlichkeitsstromdichte mit Kontinuitätsgleichung (end)
+\subsection{Impulsoperator: Generator für Translation} % (fold)
+\label{sub:Impulsoperator:_Generator_für_Translation}
+\begin{align*}
+    e^{a \frac{\p}{\p x}} \Psi(x)
+    &=
+    \underbrace{\sum_{n=0}^\infty \frac{a^n}{n!} \frac{\p^n}{\p x^n} \Psi \quad a \in
+    \mathbb{R}}_{\text{Taylorentwicklung}} \\
+    &=
+    \Psi(x+a)
+\end{align*}
+Impulsoperator $\h{p}_x = \frac{\hb}{i} \frac{\p}{\p x}$:
+\begin{equation*}
+    e^{\frac{i}{\hb} a \h{p}_x} \Psi(x) =
+    e^{a \frac{\p}{\p x}} \Psi(x) = \Psi(x+a)
+\end{equation*}
+% subsection Impulsoperator: Generator für Translation (end)
+\subsection{Impulseigenschaften} % (fold)
+\label{sub:Impulseigenschaften}
+\begin{align*}
+    \h{p} \varphi(x) &= p' \varphi(x) \quad a \in \mathbb{R}\\
+    \frac{\hb}{i} \frac{d }{d x} \varphi(x) &= p' \varphi(x) \\
+\end{align*}
+\begin{equation*}
+    \tag*{\text{(verallgemeinerte Eigenfunktion)}}
+    \rar
+    \boxed{
+        \varphi_{p'}(x) = c e^{\frac{i}{\hb} p' x}
+    }
+    \quad p' \in \mathbb{R} 
+\end{equation*}
+$\varphi_{p'}(x)$ nicht normierbar: $\int_{-\infty}^{\infty} \lv \varphi_{p'}
+\rv^2 - \infty$.
+
+Konvention zur Festsetzung von $c$:
+\begin{align*}
+    \delta(p_1 - p_2) \overset{!}{=} \int dx \varphi_{p'}^*(x) \varphi_{p_2}(x)
+    &=
+    \underbrace{\lv c \rv \int_{-\infty}{\infty} e^{- \frac{i}{\hb} p_1 x}
+    e^{\frac{i}{\hb}  p_2 x}}_{=\int_{-\infty}^{\infty} dx e^{\frac{i}{\hb} x \lk
+    p_2 - p_1 \rk} = 2 \pi \hbar \delta (p_1 - p_2)} \\
+    &=
+    \lv c^2 \rv 2 \pi \delta(p_1 - p_2) \\
+    &\rar c= \frac{1}{\sqrt{2\pi\hb}}
+\end{align*}
+\begin{equation*}
+    \varphi_{p_1}(x) = \frac{1}{\sqrt{2 \pi \hb}} e^{\frac{i}{\hb} p'_x}
+\end{equation*}
+System im Zustand $\Psi$: Wahrscheinlichkeit den Impuls $p'$ zu messen:
+\begin{align*}
+    W(p')
+    &=
+    \lv \int_{-\infty}^{\infty} dx \Psi_{p'}^*(x) \Psi(x) \rv^2 \\
+    &=
+    \lv \frac{1}{\sqrt{2\pi\hb}} 
+    \underbrace{\int_{-\infty}^{\infty} dx e^{-\frac{i}{\hb}p'x}\Psi(x)
+    \rv^2}_{\text{Fourriertransformierte} = \tilde{\Psi}(p')} \\
+    &=
+    \underbrace{\lv \tilde{\Psi}(p')\rv^2}_{\text{Wahrscheinlichkeitsdichte}}
+\end{align*}
+denn
+\begin{align*}
+    \int_{-\infty}^{\infty} dp' W(p')
+    &=
+    \int_{-\infty}^{\infty} dp' \tilde{\Psi}^*(p') \tilde{\Psi}(p') \\
+    &=
+    \int_{-\infty}^{\infty} dp' \frac{1}{\sqrt{2 \pi \hb}}
+    \int dx' e^{\frac{i}{\hb} p' x'} \Psi^*(x') \\
+    &=
+    \frac{1}{\sqrt{2 \pi \hb}} \int_{-\infty}^{\infty} dx e^{- \frac{i}{\hb}p'
+    x} \Psi(x)\\
+    &=
+    \int dx \int dx' \Psi^*(x)\Psi(x)
+    \underbrace{\int_{-\infty}^{\infty} dp' \frac{1}{2 \pi \hb}
+    e^{\frac{i}{\hb} p' \lk x' - x \rk }}_{=\delta(x-x')}\\
+    &=
+    \int dx \Psi^*(x)\Psi(x) = \int dx \lv \Psi(x) \rv^2 = 1
+\end{align*}
+\begin{eins}{Mathematisch:}
+     \begin{equation*}
+         \int dx \lv \Psi(x) \rv^2 = \int dp \lv \tilde{\Psi}(p) \rv^2
+     \end{equation*}
+     gilt generell für Fourriertransformationen $\rar$ Parsevalsches Theorem
+\end{eins}
+% subsection Impulseigenschaften (end)
+\subsection{Impulsraumdarstellung der Wellenfunktion} % (fold)
+\label{sub:Impulsraumdarstellung_der_Wellenfunktion}
+$\Psi(x,t)$ Wellenfunktion im Ortsraum.
+\begin{equation*}
+    \tag*{\text{(Wellenfunktion im Impulsraum)}}
+    \tilde{\Psi}(p,t) =
+    \frac{1}{\sqrt{2 \pi \hbar}} \int dx e^{- \frac{i}{\hbar}p_x} \Psi(x,t)
+\end{equation*}
+% subsection Impulsraumdarstellung der Wellenfunktion (end)
+\subsection{Impulsraumdarstellung von Operatoren} % (fold)
+\label{sub:Impulsraumdarstellung_von_Operatoren}
+$\Psi(x,t)$ Wellenfunktion im Ortsraum.
+\begin{gather*}
+    \h{x}\Psi(x) = x \Psi(x) \quad \h{p}\Psi(x) = \frac{\hb}{i}\frac{\p\Psi}{\p
+    x} \\
+    A(x,p) \rar \h{A} = A(x,\frac{h}{i} \frac{\p}{\p x} \\
+    \text{konsistent mit} \qquad \left\langle \h{A}  \right\rangle =
+    \int dx \Psi^*(x) \h{A} \Psi(x) \\
+    \text{Berechnung von Erwartungswert:} \quad \left\langle \h{x}
+    \right\rangle = \int dx \lv \Psi(x) \rv^2 x
+\end{gather*}
+Wirkung von Operatoren direkt im Impulsraum $\tilde{\Psi}(p,t)$:
+\begin{align*}
+    \left\langle \h{p} \right\rangle 
+    &=
+    \int dp \lv \tilde{\Psi}(p) \rv^2 p = \int dp \tilde{\Psi}^*(p)
+    \underbrace{p \tilde{\Psi}(p)}_{\h{p}\tilde{\Psi}} \\
+    &=
+    \int dp \tilde{\Psi}^* (p) \h{p} \tilde{\Psi}(p)
+\end{align*}
+\begin{equation*}
+    \h{p}\tilde{\Psi}(p) = p \tilde{\Psi}(p)
+\end{equation*}
+\begin{eins}{Fourrier-Rücktransformation}
+    \begin{equation*}
+        \Psi(x) = \frac{1}{\sqrt{2 \pi \hb}} \int dp e^{\frac{i}{\hb}px}
+        \tilde{\Psi}(p)
+    \end{equation*}
+\end{eins}
+\begin{align*}
+    \lv \h{x} \rv 
+    &=
+    \int dx \Psi^*(x) x \Psi(x) \\
+    &=
+    \int dx \int dp \int dp' \frac{1}{2 \pi \hb} e^{-  \frac{i}{\hb} xp'}
+    \tilde{\Psi}^*(p') x e^{\frac{i}{\hb} px} \tilde{\Psi}(p)
+\end{align*}
+\begin{einsn}
+    \begin{equation*}
+        x e^{\frac{i}{\hb}px}\tilde{\Psi}(p) = \tilde{\Psi}(p)
+        \frac{\hb}{i}\frac{\p}{\p p}  e^{\frac{i}{\hb}px}
+    \end{equation*}
+\end{einsn}
+\begin{align*}
+    &=
+    \int dp \int dp' \tilde{\Psi}^*(p')\tilde{\Psi}(p) \frac{\hb}{i}\frac{\p}{\p
+    p} \underbrace{\int dx \frac{1}{2 \pi \hb} e^{\frac{i}{\hb}x \lk p-p' \rk
+    }}_{\delta(p-p')}\\
+    &=
+    \int dp \int dp' \tilde{\Psi}^*(p)\tilde{\Psi}(p) \frac{\hb}{i}
+    \frac{\p}{\p p} \delta(p - p') \\
+    &=
+    \int dp \int dp' \tilde{\Psi}^*(p) \lk - \frac{\hb}{i}
+    \frac{\p \tilde{\Psi}}{\p p}\rk \delta(p -p') \\
+    &=
+    \int dp \tilde{\Psi}^*(p')\lk -  
+    \underbrace{\frac{\hb}{i}\frac{\p}{\p p}}_{= \h{x}}\rk \tilde{\Psi}(p)
+    =
+    \left\langle \h{x} \right\rangle 
+\end{align*}
+Im Impulsraum $\tilde{\Psi}(p)$:
+\begin{gather*}
+    \h{p} \tilde{\Psi}(p) = p \tilde{\Psi}(p)\\
+    \h{x} \tilde{\Psi}(p) = i\hb \frac{\p}{\p p} \tilde{\Psi}(p)\\
+    A(x,p) \rar \h{A} \tilde{\Psi}(p) = A(i \hb \frac{\p}{\p p},p)
+    \tilde{\Psi}(p)
+\end{gather*}
+% subsection Impulsraumdarstellung von Operatoren (end)
+\subsection{Verallgemeinerung in $3D$} % (fold)
+\label{sub:Verallgemeinerung_in_$3D$}
+\begin{gather*}
+    \h{\vec{p}}\Psi(\vec{r}) = \frac{\hb}{i} \vec{\nabla} \Psi(\vec{r})\\
+    i = x,y,z \qquad \h{p}_i \varphi_{\vec{p'}}(\vec{r}) = p'_j
+    \varphi_{\vec{p'}}(\vec{r}) \\
+    \varphi_{\vec{p'}}(\vec{r}) = 
+    \frac{1}{\lk 2 \pi \hb \rk^{\frac{2}{3}}} e^{\frac{i}{\hb}\vec{p'}\vec{r}}\\
+    W(\vec{r}')=
+    \lv \int d^3 \varphi_{\vec{p}'}^* (\vec{r}) \Psi(\vec{r}) \rv^2
+    =
+    \lv
+    \underbrace{
+    \frac{1}{\lk 2 \pi \hb \rk^{\frac{2}{3}}} \int d^3 r e^{- \frac{i}{\hb}\vec{p}\vec{r}}\Psi(\vec{r})
+    }_{
+    \tilde{\Psi}(\vec{p}')}
+    \rv^2
+\end{gather*}
+% subsection Verallgemeinerung in $3D$ (end)
+% section Impulsoperator, Impulseigenfunktion, Impulsraumdamrstellung (end)
