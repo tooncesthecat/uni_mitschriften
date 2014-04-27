@@ -20,15 +20,144 @@ Röntgenstrahlen an Kristallen.
         m_x = \frac{M_k}{N}
     \end{equation*}
 \end{itemize}
-Die genauste Methode der Massenbestimmung von Atomen beuntzt die ablenkung von
+% subsection einfache Verfahren (end)
+\subsection{Massenspektrometer} % (fold)
+\label{sub:Massenspektrometer}
+Die genauste Methode der Massenbestimmung von Atomen benutzt die Ablenkung von
 Ionen in elektrischen oder magnetischen Feldern.
 Aus der gemessenen Masse $m(A^+)$ eines einfach geladenen Ions $A^+$ erhält man
 die atommasse durch:
 \begin{equation*}
-    m(A) = m(A^+) + m(e^-) j- \frac{1}{c^2}E_B
+    m(A) = m(A^+) + m(e^-) - \frac{1}{c^2}E_B
 \end{equation*}
 mit $E_B$ der Bindungsenergie des Elektrons im Atom $A$.
+\subsubsection{Massenspektrograph nach Thomson} % (fold)
+\label{ssub:Massenspektrograph_nach_Thomson}
+%BILD
+Die durch die Gasentladung erzeugten Ionen (Masse $M$, Ladung $q$) wrden zur
+Kathode hin bescheleunigt, auf Geschwindigkeit 
+\begin{equation*}
+    v=\sqrt{\frac{2qU}{m}} \quad \lk E_{kin} = \frac{1}{2} m v_t^2 = qU \rk 
+\end{equation*}
+Im homogenen Magnetfeld $\vec{B}=$ %(B 0 0)$
+und homogenen elektr Feld $\vec{E}=$ %(E 0 0)$
+erfahren die Ionen über die Länge $L$ eine Ablenkung    
+\begin{equation*}
+    \label{eqn:massenspek1}
+    \tag*{\text{(*)}}
+    \frac{d ^2 x}{d t^2} = \frac{1}{m}E
+\end{equation*}
+\begin{equation*}
+    \label{eqn:massenspek2}
+    \tag*{\text{(**)}}
+    \frac{d ^2y}{d t^2}=\frac{q}{m} v B
+\end{equation*}
+Mit $v_x,v_y \ll v_z \simeq v$ hat man:
+\begin{gather*}
+    \frac{dx}{dt} = \frac{d x}{d t} \frac{d z}{d t} \simeq \frac{d x}{d z} \\
+    \rar \frac{d ^2x}{d t^2} \simeq v^2 \frac{d ^x}{d z^2}
+\end{gather*}
+und ebenso:
+\begin{equation*}
+    \frac{d ^2y}{d t^2} \simeq v^2 \frac{d ^2y}{d z^2}
+\end{equation*}
+Einsetzen in $\lk * \rk$ ergibt:
+\begin{equation*}
+    \frac{d ^2 x}{d z^2} =\frac{q}{m} \frac{1}{v^2}E
+\end{equation*}
+und
+\begin{equation*}
+    \frac{d ^2y}{d z^2} = \frac{q}{m}\frac{1}{v}B
+\end{equation*}
+Für $z \in \left[ -\frac{L}{2}, + \frac{L}{2} \right]$ liefert die Integration
+\begin{align*}
+    \frac{d x}{d z} &= \int_{-\frac{L}{2}}^{z} \frac{qE}{mv^2}dz' =
+    \frac{qE}{mv^2} \lk \frac{L}{2} +z \rk  \\
+    \rar x(z) &= \frac{qE}{wmv^2}\lk \frac{L}{2} +z \rk^2
+\end{align*}
+Ebenso ergibt sich mit $\lk ** \rk$
+\begin{equation*}
+    y(z) = \frac{qB}{2mv} \lk \frac{L}{2} + z \rk^2
+\end{equation*}
+Am Ende des Kondensators befinted sich das Ion bei $\vec{r}= \lk
+x(\frac{L}{2}),y(\frac{L}{2}),\frac{L}{2}\rk$. Die Steigung in $x$-Richung ist
+dort:
+\begin{equation*}
+     \frac{dx }{dz }\lk \frac{L}{2} \rk = \frac{qE}{mv^2} \cd L
+\end{equation*}
+Bei der Fotoplatte bei $z=z_0$ ist die $x$-Koordinate also:
+\begin{align*}
+    x(z_0) &= \frac{qE}{2mv^2} \cd L^2 + \frac{qEL}{mv^2} \lk z_0 -
+    \frac{L}{2}\rk \\
+    &= \frac{qEL}{mv^2}\cd z_0
+\end{align*}
+analog erhalt man für die $y$-Koordinate:
+\begin{equation*}
+    y(z_0) = \frac{qB}{2mv}L^2 + \frac{qBL}{mv}\lk z_0 - \frac{L}{2}\rk =
+    \frac{qBL}{mv} \cd z_0
+\end{equation*}
+Eliminiation von $v$ liefert bei $z_0$:
+\begin{equation*}
+    x(y) = \frac{m}{q}\underbrace{\frac{E}{B^2 L z_0}}_{=f(\frac{q}{m}) \cd
+    y^2}\cd y^2
+\end{equation*}
+Für jeden Wert $\frac{q}{m}$ entspricht dies einer Parabel, aus deren Vorfaktor
+$f(\frac{q}{m})$ bei bekannten $E$ und $B$ das Verhältnis $\frac{q}{m}$
+bestimmt werden kann.
 
-% subsection einfache Verfahren (end)
+Beim Thomson-Massenspektrograph werden gleiche $\frac{q}{m}$ mit verschiedenen
+Geschwindigkeiten auf verschiedene Stellen der Fotoplatte entlang der Parabel
+abgebildet. Ein besseres Signal erhält man, wenn die Ionen mit gleichen
+$\frac{q}{m}$-auch bei unterschiedlichen Geschwindigkeiten - auf einen
+einzelnen Punkt fokusiert sind. 
+% subsection Massenspektrometer (end)
+
+\subsection{Astonsche Massenspektrograph} % (fold)
+\label{sub:Astonsche_Massenspektrograph}
+$\rar$ ÜA
+% subsection Astonsche Massenspektrograph (end)
+\subsection{Flugzeit-Massenspektrometer} % (fold)
+\label{sub:Flugzeit-Massenspektrometer}
+Ein einfaches, billiges und auch heute noch weit verbreitetes
+Massenspektrometer ist das Flugzeit-Massenspektrometer. Dabei werden IOnen in
+einem kleinen Volumen erzeugt (z.B durch Photoionisation mit einem geputztem
+Laser), durch eine Spannung $U$ auf $v = \sqrt{\frac{2qU}{m}}$ beschleunigt und
+durchlaufen eine feldfreie Strecke $L$, bevor sie vom Detektor registriert
+werden (Chameltron, Ionenmultiplier, Kanalplattenverstärker) registriert
+werden.
+%BILD
+Die Zeit zwischen Erzeugung und Detektion
+\begin{gather*}
+    T_m = \frac{L}{v} = \frac{L}{\sqrt{\frac{2qU}{m}}} \\
+    \rar
+    \boxed{
+        m = \frac{2qU}{L^2}T_m
+    }
+\end{gather*}
+Die Genauigkeit des Massenspektrometers hängt davon ab, wie genau $U$, $L$ und
+$T$ bestimmt werden können, d.h u.a in welcher Zeit $\Delta t$ und in einem wie
+kleinem Volumen $\Delta V$ sie erzeugt werden können.
+Die genaueste Auflösung wird heutzutage mit sogenanten
+Ionen-Zykloyton-Resonanz-spektrometern (sog. Penning-Fallen) erzielt. Die
+erreichte Auflösung ist $\frac{\Delta m}{m} \leq 10^{-8}$.
+% subsection Flugzeit-Massenspektrometer (end)
+
+\subsection{Isotopie} % (fold)
+\label{sub:Isotopie}
+Durch genaue Massenmessungen wurde es möglich nachzuweisen, dass viele
+chemische Elemente in der Natur in verschiedenen Isotopen vorkommen. Die
+Isotope eines Elements haben alle die gleichen chemischen Eigenschaften,
+unterscheiden sich aber in ihrer Masse
+um kleine ganzzahlige Vielfache einer $AME$. Die Erklärung der Isotopie kam
+erst mit der Entdeckung des Neutrons: Isotope unterscheiden sich in der anzahl
+der Neutronen im Atomkern. Ein Element (wie z.B $He$) wird vollständig erst
+durch die Anzahl der Elektronen (= Protonen = Ladungszahl $Z$) und Anzahl der
+Neutronen und Protonen im Kern (= atomare Massenzahl $A$) angegeben.
+\begin{beis}
+    Helium mit $2$ Protonen und $1$ Neutron $= ^3_2 He$.
+
+    Helium mit $2$ Protonen und $2$ Neutronen $= ^4_2 He$.
+\end{beis}
+% subsection Isotopie (end)
 
 % section Bestimmung der Atommasse (end)

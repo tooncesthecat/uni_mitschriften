@@ -127,19 +127,21 @@ Impulsoperator $\h{p}_x = \frac{\hb}{i} \frac{\p}{\p x}$:
     \quad p' \in \mathbb{R} 
 \end{equation*}
 $\varphi_{p'}(x)$ nicht normierbar: $\int_{-\infty}^{\infty} \lv \varphi_{p'}
-\rv^2 - \infty$.
+\rv^2 = \infty$.
 
 Konvention zur Festsetzung von $c$:
 \begin{align*}
     \delta(p_1 - p_2) \overset{!}{=} \int dx \varphi_{p'}^*(x) \varphi_{p_2}(x)
     &=
-    \underbrace{\lv c \rv \int_{-\infty}{\infty} e^{- \frac{i}{\hb} p_1 x}
+    \underbrace{\lv c \rv^2 \int_{-\infty}^{\infty} e^{- \frac{i}{\hb} p_1 x}
     e^{\frac{i}{\hb}  p_2 x}}_{=\int_{-\infty}^{\infty} dx e^{\frac{i}{\hb} x \lk
     p_2 - p_1 \rk} = 2 \pi \hbar \delta (p_1 - p_2)} \\
     &=
-    \lv c^2 \rv 2 \pi \delta(p_1 - p_2) \\
-    &\rar c= \frac{1}{\sqrt{2\pi\hb}}
+    \lv c^2 \rv 2 \pi \delta(p_1 - p_2) 
 \end{align*}
+\begin{equation*}
+    \rar c= \frac{1}{\sqrt{2\pi\hb}}
+\end{equation*}
 \begin{equation*}
     \varphi_{p_1}(x) = \frac{1}{\sqrt{2 \pi \hb}} e^{\frac{i}{\hb} p'_x}
 \end{equation*}
@@ -149,8 +151,8 @@ System im Zustand $\Psi$: Wahrscheinlichkeit den Impuls $p'$ zu messen:
     &=
     \lv \int_{-\infty}^{\infty} dx \Psi_{p'}^*(x) \Psi(x) \rv^2 \\
     &=
-    \lv \frac{1}{\sqrt{2\pi\hb}} 
-    \underbrace{\int_{-\infty}^{\infty} dx e^{-\frac{i}{\hb}p'x}\Psi(x)
+    \underbrace{\lv \frac{1}{\sqrt{2\pi\hb}} 
+    \int_{-\infty}^{\infty} dx e^{-\frac{i}{\hb}p'x}\Psi(x)
     \rv^2}_{\text{Fourriertransformierte} = \tilde{\Psi}(p')} \\
     &=
     \underbrace{\lv \tilde{\Psi}(p')\rv^2}_{\text{Wahrscheinlichkeitsdichte}}

@@ -55,4 +55,81 @@ Zurück zur Separation:
     \pm ikx - i\omega(k)t = ce
 \end{equation*}
 % section Das freie Teilchen - Wellenpakete (end)
+\begin{enumerate}
+    \item Analogie: el/magn Welle
+    \begin{equation*}
+        \lk \Delta - \frac{1}{c^2}\frac{\p}{\p t^2} \rk \vec{E} = 0
+        \qquad
+        \vec{E} = \vec{E}_0 e^{i \lk ks - \omega t \rk }
+        \qquad
+        \omega = ck
+    \end{equation*}
+    el/magn Felder sind reell
+    \begin{equation*}
+        \vec{E} = \vec{E}_0 \cos(kx - \omega t)
+    \end{equation*}
+    Lösung der Schrödingergleichung: i.A komplex
+    \item Lösung durch Separationsansatz: $\rar \Psi_t (x,t) = c e^{\pm ikx - i
+    \omega t}$ $\rar$ spezielle Lösung der SG. SG ist linear $\rar$
+    Linearkombination von Lösungen der SG sind auch Lösungen der SG.
+    \begin{equation*}
+        \Psi(x,t) = c_1 e^{i \lk k_1 x - \omega(k) t \rk }
+        + c_2 e^{i \lk k_2 x - \omega(k) t \rk }
+    \end{equation*}
+    Allgemeine Lösung:
+    \begin{equation*}
+        \tag*{\text{(Wellenpaket)}}
+        \Psi(x,t) = 
+        \infint dk \quad c(k) e^{i \lk kx - \omega(k) t \rk }
+    \end{equation*}
+    \item $\Psi_{\pm}$ sind Eigenfunktionen des Impulsoperators:
+    \begin{gather*}
+        \h{p}\Psi_{\pm} 
+        =
+        \frac{\hb}{i} \frac{\p}{\p x} c e^{\pm ikx - i\omega t}
+        =
+        \pm \hb k c e^{\pm ikx - i\omega t}
+        =
+        \lk \pm \hb k \rk \Psi_{\pm}
+        =
+        p \Psi_{\pm} \\
+        p = \pm \hb k
+    \end{gather*}
+    $\Psi_{\pm}$ beschreibt ein freies Teilchen mit Impuls $p = \pm \hbar k$.
+
+    \begin{erl}{de Broglie-Relation}
+        \begin{equation*}
+            \lambda = \frac{2 \pi}{k} = \frac{2 \pi}{\frac{\lv p \rv}{\hbar}}
+            = \frac{h}{\lv p \rv}
+        \end{equation*}
+    \end{erl}     
+    $\Psi_{\pm}$: Eigenfunktionen von $\h{H}$:
+    \begin{equation*}
+        \h{H}\Psi_{\pm} = E \Psi_{\pm}
+        \qquad
+        E = \frac{\hb^2 k^2}{2m}
+    \end{equation*}
+    $\Psi_{\pm}$ sind keine Eigenfunktionen des Ortsoperators:
+    \begin{equation*}
+        \h{x} \Psi_{\pm}(x,t)  
+        =
+        x \Psi_{\pm}(x,t)
+        =
+        x c e^{\pm ikx - i\omega t}
+        \overset{!}{=}
+        x c e^{\pm ikx - i\omega t}
+    \end{equation*}
+    $\rar$ Fehler! Keine Eigenfunktion.
+
+    Impuls fest $\rar$ Ort vollständig unbestimmt
+    \begin{equation*}
+        \rho (x,t)
+        =
+        \lv \Psi_{\pm} (x,t) \rv^2
+        =
+        \lv c e^{\pm ikx - i\omega t} \rv^2
+        =
+        \lv c \rv^2
+    \end{equation*}
+\end{enumerate}
 

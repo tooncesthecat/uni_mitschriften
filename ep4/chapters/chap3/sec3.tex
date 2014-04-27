@@ -1,0 +1,226 @@
+\section{Innere Struktur der Atome} % (fold)
+\label{sec:Innere_Struktur_der_Atome}
+
+Bis zum Ende des $19.$ Jahrhunderts galt als gesichert, dass Materie aus
+elektrisch geladenen Teilchen aufgebaut ist.
+Hinweise darauf:
+\begin{enumerate}
+    \item Elektrolyse: Moleküle dissoziieren im elektreoschen Feld in positive
+    und negative Ladungsträger (Ionen)
+    \item Magnetfeldeffekte bei elektrische Leitung in Metallen (Hall-Effekt)
+    \item Ablenkung von $\alpha$- und $\beta$-Strahlung im Magnetfeld bei
+    radioaktivem Zerfall
+    \item Experimente mit Gasentladung: erzeugte "Kanal- und Kathodenstrahlen"
+    werden durch elektrische und magnetische Felder beeinflusst.
+\end{enumerate}
+\subsection{Kathoden- und Kanalstrahlen} % (fold)
+\label{sub:Kathoden-_und_Kanalstrahlen}
+Durch Ablenkung von Kathodenstrahlen im $E$- bzw. $B$-Feld konnte J.J.Thomson
+$1897$ das Verhältnis $\frac{q}{m} = \frac{e}{m}$ bestimmen. Er stellte fest,
+dass dieses Verhältnis unabhangig vom Kathodenmaterial ist, und ca $10^4$ mal
+größer als bei den von $1886$ von E. Goldstein ($1850$-$1930$) entdeckten
+Kanalstrahlen. Bereits $1895$ werden diese Elementarladungen von G. Stoney
+"Elektronen" genannt.
+W.Wien ($1864$-$1928$) konnte $1897$ den WERt $\frac{q}{m}$ der Kanalstrahlen
+messen und zeigen, dass sie aus den positiven Ionen des Füllgases der
+Entladungsröhre bestehen. In Kombination mit der Atomvorstellung ergab sich
+daraus:
+
+Atome sind aus elektrisch geladenen Teilchen aufgebaut. $\rar$ es gibt eine
+Substruktur!
+
+Da Atome neutral sind, müssen gleich viele negative wie positive Lasungen
+vorhanden sein, d.h:
+Atome bestehen aus negativ geladenen Elektronen und einer
+entgegengesetzt gleichen positiven Ladung!
+Die elektrisch geladenen Bausteine haben Ladung und Masse, wobei
+$\frac{m_e}{m_+} < 10^{-3}$.
+
+Daraus ergeben sich folgende Fragen:
+\begin{enumerate}
+    \item Welche Eigenschaften haben die Substrukturteilchen?
+    \item Wie werden die Telchen im Atom zusammengehalten?
+    \item Wie sind sie im Atom angeordnet, d.h. welche Substruktur hat das
+    Atom?
+\end{enumerate}
+% subsection Kathoden- und Kanalstrahlen (end)
+\subsection{Differentielle Wirkungsquerschnitt bzw. Streuungsquerschnitt} % (fold)
+\label{sub:Differentielle_Wirkungsquerschnitt_bzw._Streuungsquerschnitt}
+Um die Verteilung der Ladung innerhalb der Atome zu bestimmen, kann man
+elektrisch geladene Teilchen mit Ladung $q_s$ als Sonde verwenden. Deren
+Ablenkung im Coulombpotenzial des Atoms
+\begin{equation*}
+    V_c (r) = \frac{1}{4\pi\epsilon}\frac{q_s \cd q_A}{r} 
+    \quad
+    \text{mit} 
+    \quad
+    q_A = \int \rho_A (\vec{r}) dV
+\end{equation*}
+erlaubt Rückschlüsse über die Ladungsverteilung $\rho_A (\vec{r})$ zu ziehen.
+Dazu werden die "Sonden-Teilchen" in einem Winkelbereich $\left[ \vartheta, \vartheta
++ d \vartheta \right]$ um die Probe nachgewiesen. Diese gehören - abhängig vom
+Streupotenzial $V(r)$ - zu einem "Stoßparameter" $b$ im Bereich $\left[ b, b+db
+\right]$. 
+%BILD
+Der "differentielle Wirkungsquerschnitt" $d \sigma$ gibt hierbei den Bruchteil
+des gesamten (integralen) Streuquerschnitts $\sigma$ and, durch den die
+Teilchen hindurchfliegen, die vom Potenzial $V(r)$ in dem vom Detektor
+aufgespannten Raumwinkel $d \Omega = \sin \vartheta d \vartheta d\phi$
+gestreut werden. D.h.:
+\begin{gather*}
+    \frac{d \sigma (\vartheta,\Omega)}{\sigma}
+    =
+    \frac{\Delta \dot{N}(\vartheta,\Omega)}{\dot{N}}
+    =
+    \frac{2 \pi b db}{\sigma} \frac{\varphi}{2\pi}
+    =
+    \frac{2\pi}{\sigma} \frac{db}{d\vartheta}d\vartheta \frac{d \varphi}{2 \pi}
+    =
+    \frac{b}{\sigma} \frac{db}{d\vartheta}d\vartheta d\varphi \\
+    \rar d\sigma(\vartheta,\Omega) = b \frac{d b}{d \vartheta} \frac{1}{\sin
+    \vartheta} d\Omega \\
+    \rar
+    \boxed{
+    \frac{d \sigma (\vartheta,\Omega)}{d \Omega} = b \frac{d b}{d \vartheta}
+    \frac{1}{\sin \vartheta}
+    }
+\end{gather*}
+% subsection Differentielle Wirkungsquerschnitt bzw. Streuungsquerschnitt (end)
+\subsection{Das Thomsonsche Atommodell} % (fold)
+\label{sub:Das_Thomsonsche_Atommodell}
+J.J. Thomson ($1856$-$1940$) schlug $1903$ für die raüliche Verteilung der $Z$
+Elektronen und $Z$ positiven Ladungen das sog "Rosinenkuchen-Modell", bei dem
+die positiven Ladungen gleichäßig über die gesamte Fläche verteilt sind und die
+$e^-$ sich frei darin bewegen.
+\begin{equation*}
+    n_1 = n_+ = \frac{Z}{4 \frac{\pi}{3} R^3} \quad \text{$R$: Atomradius}
+\end{equation*}
+Würden nur die positiven Ladungen berücksichtigt, würde ein Elektron im Abstand
+$r<R$ bei einer homogenen Ladungsverteilung (mit Ladungsdichte $= \rho_+ =
+\frac{Ze}{\frac{4 \pi}{3}R^3}$) das Feld
+\begin{equation*}
+    E(\vec{r}) = \frac{Zer}{4\pi\epsilon R^3} \h{r}
+\end{equation*}
+und somit die Kraft
+\begin{equation*}
+    \vec{F}(\vec{r}) 
+    =
+    -e \vec{E}
+    = - k_T \vec{r} \quad \text{mit $k_T = \frac{Ze^2}{4\pi\epsilon R^3} \h{r}$}
+\end{equation*}
+wirken. Das führt zu einer harmonsichen Schwingung mit Frequenz $\omega_e =
+\sqrt{\frac{k_T}{m_w}}$. Für eine homogene Verteilung aller $Z$ Elektronen
+(Teilchendichte $n_e = \frac{Z}{\frac{4\pi}{3} R^3}$) ergibt sich eine
+kollektibe Schwungung gegen die viel schwereren positiven Ladungen mit der
+sog. Plasmafrequenz.
+\begin{align*}
+    w_p 
+    &=
+    \sqrt{ \frac{n_e \cd e^2}{\epsilon \cd m_e}}
+    = 
+    \sqrt{\frac{3 Z e^2}{4 \pi \epsilon_0 m_e R^3}} \\
+    &=
+    \sqrt{3} \omega_e
+\end{align*}
+\begin{erl}{Problem:}
+    Die aus diesem Modell abgeschätzten Absorptions und Emissionsfrequenzen
+    stimmen nicht mit den beobachteten atomaren Frequenzen überein. Vorallem:
+    Ergebnisse von Streuezperimenten stimmen nicht mit der vom Modell
+    erwarteten Winkelverteilung überein:
+\end{erl}
+%\subsubsection{Winkelverteilung von $\alpha$-Teilchen} % (fold)
+%\label{ssub:Winkelverteilung_von_$\alpha$_Teilchen}
+Für $\alpha$-Teilchen (Masse $m_{He}$, Ladung $2e$) spielen die Elektronen
+wegen ihrer kleinen Masse bei der Ablenkung praktisch keine Rolle. Die Kraft
+auf ein $\alpha$-Teilchen in Richtung senkrecht zu seiner Einfallsrichtung
+ergibt sich daher für $r<R$ zu:
+\begin{equation*}
+    F_y = F(r) \sin \varphi
+    \simeq
+    \frac{2 Z e^2 r}{4\pi \epsilon_0 R^3} \frac{b}{r} 
+    =
+    2k_T b
+\end{equation*}
+%BILD
+\begin{align*}
+    \rar \Delta p_y 
+    &=
+    \int F_y dt = 2 k_T b T \\
+    &\simeq \frac{4 k_T b }{\vartheta_0} \sqrt{R^2 -b^2}
+    \quad \text{ mit $T \simeq \frac{d}{\vartheta_0}= \frac{2 \sqrt{R^2 -
+    b^2}}{\vartheta_0}$}
+\end{align*}
+%BILD
+Da $\Delta p_y \ll p_z \simeq p(dh \vartheta \ll 1)$
+\begin{align*}
+    \rar \frac{\Delta p_y}{p_z} 
+    &\simeq \frac{\Delta p_y}{p} = \tan \varphi \\
+    &=
+    \frac{4 k_T b}{m \vartheta_0^2} \sqrt{R^2 - b^2} \simeq \vartheta
+\end{align*}
+\begin{equation*}
+    \rar \boxed{
+    \vartheta = \frac{4 k_T b}{m \vartheta_0^2} \sqrt{R^2 - b^2}
+    } = \vartheta(b)
+\end{equation*}
+Für ein mit beliebigem Stoßparameter $b$ einlaufendes $\alpha$-Teilchen ergibt
+sich der durchschnittliche Streuwinkel $\bar{\vartheta}$ zu:
+%\begin{align*}
+%    \bar{\vartheta}
+%    &=
+%    \int_{b=0}^R
+%    \vartheta(b) \frac{2 \pi b}{\pi R^2} db
+%    =
+%    \frac{8 k_T}{m \vartheta_0^2 R^2}
+%    \underbrace{\int_0^R \sqrt{R^2 -b^2}b^2 db}_{\frac{\pi}{16 R^4} \\
+%    &=
+%    \frac{\pi}{2} \frac{k_T R^2}{m \vartheta_0^2}
+%    =
+%    \frac{Z e^2}{8 \epsilon R m v_0^2}
+%\end{align*}
+\begin{beis}
+    $R=0.1mm$, $\alpha$-Teilchen mit $E=5Mev$, and Goldfolie $(Z=79)$ gestreut
+    werden
+    \begin{equation*}
+        \rar \bar{\vartheta} = 1.8 \cd 10^{-4} rad \simeq 0.62' \quad
+        \rar \text{sehr kleiner Winkel}
+    \end{equation*}
+\end{beis}
+Bisher Ablenkung durch ein Atom im Mittel berechnet ($\bar{\varphi}$). Im Experiment wurden die
+$\alpha$-Teilchen durch eine Goldfolie geschossen und somit an vielen Atomen
+gestreut (für Foliendicke von $10\mu m$ und Golddurchmesser von $\simeq 0.2 nm$, ca $6 \cd
+10^4$ Atome).
+Da die Stoßrichtung bei jeder Streuung  statistisch verteil ist (entweder nach
+links oder rechts) is auch $\bar{\vartheta}$ statistisch verteilt. $\rar$
+"Random walk"-Problem $\rar$ Gauß-Verteilung.
+
+Die Zahl der in dem Winkel $\vartheta$ abgelenkten $\alpha$-Teilchen ergibt
+such daher zu
+\begin{equation*}
+    N(\vartheta) = N_0 e^{- \frac{\vartheta^2}{\left\langle \Delta \vartheta
+    \right\rangle^2}} = N_0 e^{- \frac{\vartheta^2}{m\bar{\vartheta}}}
+\end{equation*}
+Nach $m$ Stoßprozessen ergibt sich eine mittlere Breite der Verteilung
+\begin{equation*}
+    \tag*{\text{(Standardabweichung)}}
+    \Delta \vartheta = \sqrt{m} \cd \bar{\vartheta}
+\end{equation*}
+\begin{beis}
+    Goldfolie mit Dicke $10 \mu m, \quad m \simeq 5 \cd 10^4$.
+    \begin{equation*}
+        \rar \left\langle \Delta \vartheta \right\rangle
+        =
+        4 \cd 10^{-2} rad 
+        \simeq 
+        2.3"
+    \end{equation*}
+\end{beis}
+Um das Thomsonsche Atommodell zu testen führte Rutherford $1909$
+Streuexperimente von $\alpha$-Teilchen an einer Goldfolie durch. Die Ergebnisse
+zeigten, dass auch noch shr große Streuwinkel (bis zu $160^{\circ}$) beobachtet
+wurden. Dies widersprach eindeutig dem Thomson-Modell.
+
+% subsubsection Winkelverteilung von $\alpha$ Teilchen (end)
+
+%subsection Das Thomsonsche Atommodell (end)
+% section Innere Struktur der Atome (end)
