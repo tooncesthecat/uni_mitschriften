@@ -1,7 +1,7 @@
 close all;
 clear all;
 
-data=importdata('bode_5d_1.txt');
+data=importdata('bode_5d.txt');
 
 %Frequenz
 f=data(:,1);

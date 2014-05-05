@@ -215,12 +215,117 @@ Nach $m$ Stoßprozessen ergibt sich eine mittlere Breite der Verteilung
         2.3"
     \end{equation*}
 \end{beis}
-Um das Thomsonsche Atommodell zu testen führte Rutherford $1909$
+Um das Thomsonsche Atommodell zu testen, führte Rutherford $1909$
 Streuexperimente von $\alpha$-Teilchen an einer Goldfolie durch. Die Ergebnisse
-zeigten, dass auch noch shr große Streuwinkel (bis zu $160^{\circ}$) beobachtet
+zeigten, dass auch noch sehr große Streuwinkel (bis zu $160^{\circ}$) beobachtet
 wurden. Dies widersprach eindeutig dem Thomson-Modell.
+
+$\rar$ Alternativ schlug Rutherford ein anderes Modell fur Atomaufbau vor.
+%subsection Das Thomsonsche Atommodell (end)
+\subsection{Das Rutherfordsche Atommodell} % (fold)
+\label{sub:Das_Rutherfordsche_Atommodell}
+Rutherford schlug vor, dass die positive Ladung des Atoms in einem kleinem
+volumen im Zentrum des Atoms, dem Atomkern, komprimiert ist. Dort ist auch die
+nahezu gesamte Atommasse vereinigt. In dem Fall: Streuung der $\alpha$-Teilchen
+im coulombfeld einer Punktladung $Q = Ze$
+\begin{gather*}
+    \rar \bar{E} (\vec{r}) = \frac{Ze}{4\pi \epsilon_0 r^2} \h{r} \\
+    \rar \vec{F}(\vec{r}) = \frac{2Ze^2}{4 \pi \epsilon r^2} \h{r}
+    = 2 \underbrace{k_R (r)}_{\neq const} \cd \vec{r}
+\end{gather*}
+Auch hier ist wieder:
+\begin{equation*}
+    F_y = F(r) \cd \sin \phi
+\end{equation*}
+%BILD
+Wegen der Drehimpulserhaltung:
+\begin{align*}
+    \lv \vec{r} \times \vec{p} \rv
+    =
+    m v_0 \cd 
+    =
+    I \cd \omega
+    &=
+    m r^2 \cd \dot{\phi}
+\end{align*}
+\begin{equation*}
+    \rar \frac{1}{r^2} = \frac{\dot{\phi}}v_0 \cd b{} \\
+\end{equation*}
+\begin{align*}
+    \rar \Delta p_y
+    &= \int_{-\infty}^{\infty} F_y dt
+    = \overbrace{\frac{2 Ze^2}{4 \pi \epsilon_0}}^{M} \frac{1}{v_0 \cd b}
+    \int_{-\infty}^{\infty} \sin \phi \frac{d \phi}{d t} dt \\
+    \rar \Delta p_y 
+    &=
+    p \cd sin \vartheta \\
+    &=
+    M \cd \frac{1}{v_0 \cd b} \int_0^{\pi \cd \vartheta} \sin \phi d\phi \\
+    &= 
+    M \frac{1}{v_0 \cd b} \lk 1 + \cos \vartheta \rk 
+\end{align*}
+und $ \frac{1+\cos \vartheta}{\sin \vartheta} = \cot \frac{\vartheta}{2}$
+ergibt sich die gesuchte Beziehung zwischen $b$ und $\vartheta$:
+\begin{align*}
+    b(\vartheta) 
+    &=
+    \frac{1}{p \cd \sin \vartheta} \cd \frac{M}{v_0} \lk 1 + \cos \vartheta \rk\\
+    &=
+    \frac{M}{m v_0^2} \cot \lk \frac{\vartheta}{2} \lk
+\end{align*}
+Mit $\frac{d \cot(x)}{d x } = - \frac{1}{\sin^2 (x)}$ ergibt sich daraus:
+\begin{equation*}
+    \frac{d b}{d \vartheta} = \frac{M}{2m v_0^2} \frac{1}{\sin^2 \lk
+    fr{\vartheta}{2}}
+\end{equation*}
+Mit $\sin \vartheta = 2 \sin \frac{\vartheta}{2} \cos \frac{\vartheta}{2}$ kann
+der differentielle Wirkungsquerschnitt $\frac{d \sigma}{d \Ohm}$ also
+geschrieben werden als
+\begin{equation*}
+    \frac{d \sigma}{d \Ohm} 
+    &=
+    b \frac{d b}{d \vartheta} \cd \frac{1}{\sin \vartheta} \\
+    &=
+    \lk \frac{M}{m v_o^2}
+    \frac{\cos(\frac{\vartheta}{2})}{\sin(\frac{\vartheta}{2})} \rk 
+    \lk \frac{M}{2mv_0^2} \frac{1}{sin^2(\frac{\vartheta^2}{2})} \rk\\
+    &=
+    \lk \frac{1}{2\sin(\frac{\vartheta}{2})\cos(\frac{\vartheta}{2})} \rk
+\end{equation*}
+\begin{align*}
+    \frac{d \sigma}{d \Omega}
+    &= \frac{M}{(2mv_0^2)^2} \frac{1}{\sin^4 (\frac{\vartheta}{2})} \\
+    &= \lk \frac{\frac{2e^2}{4\pi\epsilon}}{mv_0^2} \rk^2 \lk \frac{1}{\sin^4
+    (\frac{\vartheta}{2})} \rk
+\end{align*}
+Die gemessen Streuverteilung stimmt sehr gut mit deisem Annahmen überein.
+\begin{bem}
+    \begin{itemize}
+        \item  Bei $\alpha$-Teilchen mit $E_{kin} = 5Mev$ treten erst bei $\vartheta =
+        150^{\circ}$ Abweichungen von der Rutherfordschen Streuformel auf.
+        Dies entspricht eines Stoßparamters von $b= 6 \cd 10^{-15}m$, d.h. erst bei
+        diesen Abständen beginnen andere Kräfte als die Coulombkraft wirksam zu
+        werden $\rar$ Kernkräfte! 
+        $\rar$ Kernradius $r_K \sim 10^{-15} m$
+        \item Aus Experimenten mit verschiedenen Folienmaterialen konnte
+        Chodwich $1920$ ableiten, dass $Z$ gleich der Ordnungzahl im
+        periodischen System ist und dass
+        \begin{equation*}
+            r_K \simeq \lk 1.3 \cd 10^{-15} m \rk A^{\frac{1}{3}}
+        \end{equation*}
+        $\rar$ Rutherfordsches Atommodell:
+        \begin{quote}
+            Neg. Elektronen umkreisen den positiven Kern mit Kernladungszahl
+            $Z$ (ohne Bewegung wäre keine Stabilität möglich.) Der Kern
+            vereinigt nahzu die gesamte Masse des Atoms, macht aber nur den
+            Bruchteil $\lk \frac{r_K}{r_A} \rk^3 \simeq 10^{-15}$ des
+            Atomvolumens aus
+        \end{quote}
+    \end{itemize}
+\end{bem}
+
+% subsubsection Das Rutherfordsche Atommodell (end)
 
 % subsubsection Winkelverteilung von $\alpha$ Teilchen (end)
 
-%subsection Das Thomsonsche Atommodell (end)
 % section Innere Struktur der Atome (end)

@@ -1,0 +1,60 @@
+close all;
+clear all;
+
+data=importdata('bode_4a.txt');
+
+%Frequenz
+f=data(:,1);
+%Gain dB
+db=data(:,2);
+%Gain U_out/U_in
+U=data(:,3);
+%phase
+ph=data(:,4);
+
+x=(10^2:1:10^6);
+y=zeros(1,length(x));
+
+L=10*10^-3;
+C=10*10^-8;
+
+for i=1:length(x)
+    y(i)=sqrt((1/(1-(2*pi*x(i))^2*L*C))^2);
+end
+
+%Phase Theorie
+x2=(10^2:1:10^6);
+y2=zeros(1,length(x2));
+
+for i=1:length(x2)
+    y2(i)=atand((1-(2*pi*x(i))^2*L*C));
+end
+
+%Plots
+figure (1)
+semilogx(f,db,'*')
+xlabel('Frequenz in Hz')
+ylabel('Gain in dB')
+title('Bode-Diagramm Tiefpass 2. Ordnung dB')
+grid on
+
+
+figure (2)
+semilogx(f,U,'*')
+xlabel('Frequenz in Hz')
+ylabel('Gain in $\displaystyle\frac{U_{out}}{U_{in}}$','interpreter','latex')
+title('Bode-Diagramm Tiefpass 2. Ordnung U_{out}/U_{in}')
+grid on
+hold on
+semilogx(x,y)
+ylim([0 14])
+xlim([10^2 10^6])
+
+figure (3)
+semilogx(f,ph,'*')
+xlabel('Frequenz in Hz')
+ylabel('Phase in \circ')
+title('Bode-Diagramm Tiefpass 2. Ordnung Phase')
+grid on
+hold on
+plot(x2,y2,'r')

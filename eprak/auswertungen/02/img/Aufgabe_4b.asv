@@ -1,0 +1,57 @@
+close all;
+clear all;
+
+data1=importdata('bode_4b_2.txt');
+data2=importdata('bode_4b_peak.txt');
+%Frequenz
+f1=data1(:,1);
+%Gain dB
+db1=data1(:,2);
+%Gain U_out/U_in
+U1=data1(:,3);
+%phase
+ph1=data1(:,4);
+
+%Frequenz
+f2=data2(:,1);
+%Gain dB
+db2=data2(:,2);
+%Gain U_out/U_in
+U2=data2(:,3);
+%phase
+ph2=data2(:,4);
+
+%Theoriekurve Übertrag
+C=1*10^-6;
+L=0.1*10^-3;
+R=12;
+
+x=(10^2:1:
+
+figure(1)
+semilogx(f1,db1,'*')
+hold on
+semilogx(f2,db2,'*')
+xlabel('Frequenz in Hz')
+ylabel('Gain in dB')
+title('Bode-Diagramm Sperrkreisfilter dB')
+grid on
+
+
+figure(2)
+semilogx(f1,U1,'*')
+hold on
+semilogx(f2,U2,'*')
+xlabel('Frequenz in Hz')
+ylabel('Gain in $\displaystyle\frac{U_{out}}{U_{in}}$','interpreter','latex')
+title('Bode-Diagramm Sperrkreisfilter U_{out}/U_{in}')
+grid on
+
+figure(3)
+semilogx(f1,ph1,'*')
+hold on
+semilogx(f2,ph2,'*')
+xlabel('Frequenz in Hz')
+ylabel('Phase in \circ')
+title('Bode-Diagramm Sperrkreisfilter Phase')
+grid on
