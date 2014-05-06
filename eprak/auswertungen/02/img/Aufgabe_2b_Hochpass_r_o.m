@@ -21,7 +21,7 @@ dy=y(2)-y(1)
 
 plot(f,db,'*')
 hold on
-plot(x,y)
+plot(x,y,'r')
 
 grid on
 xlabel('log f','Fontsize',15)
@@ -29,4 +29,4 @@ ylabel('Gain in dB','Fontsize',15)
 legend('Messwerte','Geradenfit','Fontsize',15,'Location','Southeast')
 xlim([2 3.2])
 set(gca,'Fontsize',15);
-title('Geradenfit für Hochpass')
+title('Geradenfit Hochpass')

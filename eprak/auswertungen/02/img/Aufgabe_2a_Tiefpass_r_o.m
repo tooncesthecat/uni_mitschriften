@@ -21,11 +21,11 @@ dy=y(2)-y(1)
 
 plot(f,db,'*')
 hold on
-plot(x,y)
+plot(x,y,'r')
 xlim([4 6])
 grid on
 xlabel('log f','Fontsize',15)
 ylabel('Gain in dB','Fontsize',15)
 legend('Messwerte','Geradenfit')
 set(gca,'Fontsize',15);
-title('Geradenfit für Tiefpass')
+title('Geradenfit Tiefpass')
