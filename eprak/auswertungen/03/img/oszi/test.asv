@@ -1,0 +1,14 @@
+close all;
+clear all;
+
+data1=importdata('scope_0.csv');
+
+figure(1)
+plot(data1(:,1),data1(:,2))
+
+
+figure(1)
+plot(data1(:,1),data1(:,2))
+
+figure(1)
+plot(data1(:,1),data1(:,2))

@@ -21,38 +21,58 @@
 \headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Transistor steuert LED}}\headcommand {\beamer@subsectionpages {6}{6}}
 \headcommand {\slideentry {2}{1}{1}{7/7}{Transistor steuert LED}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{1}{2}{8/8}{Transistor steuert LED}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{1}{3}{9/9}{Transistor steuert LED}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{10}{Darlington Schaltung}}\headcommand {\beamer@subsectionpages {7}{9}}
-\headcommand {\slideentry {2}{2}{1}{10/10}{Darlington Schaltung}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{2}{2}{11/11}{Darlington Schaltung}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{12}{Transistor Kippstufen: Blinkschaltung}}\headcommand {\beamer@subsectionpages {10}{11}}
-\headcommand {\slideentry {2}{3}{1}{12/12}{Transistor Kippstufen: Blinkschaltung}{0}}
-\headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{3}{2}{13/13}{Transistor Kippstufen: Blinkschaltung}{0}}
-\headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {2}{3}{3}{14/14}{Transistor Kippstufen: Blinkschaltung}{0}}
+\headcommand {\slideentry {2}{1}{2}{8/9}{Transistor steuert LED}{0}}
+\headcommand {\beamer@framepages {8}{9}}
+\headcommand {\slideentry {2}{1}{3}{10/11}{Transistor steuert LED}{0}}
+\headcommand {\beamer@framepages {10}{11}}
+\headcommand {\slideentry {2}{1}{4}{12/13}{Transistor steuert LED}{0}}
+\headcommand {\beamer@framepages {12}{13}}
+\headcommand {\slideentry {2}{1}{5}{14/14}{Transistor steuert LED}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\sectionentry {3}{Transistor als Verst\IeC {\"a}rker}{15}{Transistor als Verst\IeC {\"a}rker}{0}}
-\headcommand {\beamer@sectionpages {6}{14}}
-\headcommand {\beamer@subsectionpages {12}{14}}
-\headcommand {\slideentry {3}{0}{4}{15/15}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{15}{Darlington Schaltung}}\headcommand {\beamer@subsectionpages {7}{14}}
+\headcommand {\slideentry {2}{2}{1}{15/15}{Darlington Schaltung}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{16}{Einfacher Common-Emitter-Verst\IeC {\"a}rker}}\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\slideentry {3}{1}{1}{16/16}{Einfacher Common-Emitter-Verst\IeC {\"a}rker}{0}}
+\headcommand {\slideentry {2}{2}{2}{16/16}{Darlington Schaltung}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{17}{Optimierter Common-Emitter-Verst\IeC {\"a}rker}}\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\slideentry {3}{2}{1}{17/17}{Optimierter Common-Emitter-Verst\IeC {\"a}rker}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{17}{Transistor Kippstufen: Blinkschaltung}}\headcommand {\beamer@subsectionpages {15}{16}}
+\headcommand {\slideentry {2}{3}{1}{17/17}{Transistor Kippstufen: Blinkschaltung}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{18}{Differenzverst\IeC {\"a}rker}}\headcommand {\beamer@subsectionpages {17}{17}}
-\headcommand {\slideentry {3}{3}{1}{18/18}{Differenzverst\IeC {\"a}rker}{0}}
+\headcommand {\slideentry {2}{3}{2}{18/18}{Transistor Kippstufen: Blinkschaltung}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@partpages {1}{18}}
-\headcommand {\beamer@subsectionpages {18}{18}}
-\headcommand {\beamer@sectionpages {15}{18}}
-\headcommand {\beamer@documentpages {18}}
-\headcommand {\def \inserttotalframenumber {18}}
+\headcommand {\slideentry {2}{3}{3}{19/19}{Transistor Kippstufen: Blinkschaltung}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {2}{3}{4}{20/20}{Transistor Kippstufen: Blinkschaltung}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {2}{3}{5}{21/21}{Transistor Kippstufen: Blinkschaltung}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {2}{3}{6}{22/22}{Transistor Kippstufen: Blinkschaltung}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {2}{3}{7}{23/23}{Transistor Kippstufen: Blinkschaltung}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {2}{3}{8}{24/24}{Transistor Kippstufen: Blinkschaltung}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {2}{3}{9}{25/25}{Transistor Kippstufen: Blinkschaltung}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\sectionentry {3}{Transistor als Verst\IeC {\"a}rker}{26}{Transistor als Verst\IeC {\"a}rker}{0}}
+\headcommand {\beamer@sectionpages {6}{25}}
+\headcommand {\beamer@subsectionpages {17}{25}}
+\headcommand {\slideentry {3}{0}{10}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{27}{Einfacher Common-Emitter-Verst\IeC {\"a}rker}}\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\slideentry {3}{1}{1}{27/27}{Einfacher Common-Emitter-Verst\IeC {\"a}rker}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\slideentry {3}{1}{2}{28/28}{Einfacher Common-Emitter-Verst\IeC {\"a}rker}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{29}{Optimierter Common-Emitter-Verst\IeC {\"a}rker}}\headcommand {\beamer@subsectionpages {27}{28}}
+\headcommand {\slideentry {3}{2}{1}{29/29}{Optimierter Common-Emitter-Verst\IeC {\"a}rker}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{30}{Differenzverst\IeC {\"a}rker}}\headcommand {\beamer@subsectionpages {29}{29}}
+\headcommand {\slideentry {3}{3}{1}{30/30}{Differenzverst\IeC {\"a}rker}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\slideentry {3}{3}{2}{31/31}{Differenzverst\IeC {\"a}rker}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\beamer@partpages {1}{31}}
+\headcommand {\beamer@subsectionpages {30}{31}}
+\headcommand {\beamer@sectionpages {26}{31}}
+\headcommand {\beamer@documentpages {31}}
+\headcommand {\def \inserttotalframenumber {28}}
