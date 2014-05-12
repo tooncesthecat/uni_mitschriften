@@ -1,28 +1,5 @@
 \begin{frame}
 \frametitle{Aufgabe 2}
-\framesubtitle{Bode Diagramm}
-    \begin{itemize}
-        \item Bode Diagramm: Auftragung Dämpfung über Frequenz
-        \item Visualisierung von Dämpfung
-        \item Dezibel:
-    \end{itemize}
-    \begin{equation*}
-        V^* = 20 \log_{10} \left( \frac{U_2}{U_1} \right) 
-    \end{equation*}
-\end{frame}
-\begin{frame}
-\frametitle{Aufgabe 2}
-\framesubtitle{Frequenzfilter}
-    \begin{itemize}
-        \item Hoch-,Tief-,Sperr-,Bandpassfilter
-        \item Unterdrückung von Frequenzbereichen
-        \item Ordnung gibt an wie stark die Dämpfung ausfällt: 1. Ordnung:
-        $6db$ pro Oktave, 2. Ordnung $12dB$ pro Okatave etc.
-        \item nichtlineares Verhalten
-    \end{itemize}
-\end{frame}
-\begin{frame}
-\frametitle{Aufgabe 2}
 \framesubtitle{Tiefpassfilter 1. Ordnung}
 \begin{figure}[H]
 \begin{center}
@@ -56,6 +33,29 @@
              \includegraphics[scale=0.2]{./img/2a_tief_1MHz.png}
      \end{center}
      \end{figure}
+\end{frame}
+\begin{frame}
+\frametitle{Aufgabe 2}
+\framesubtitle{Bode Diagramm}
+    \begin{itemize}
+        \item Bode Diagramm: Auftragung Dämpfung über Frequenz
+        \item Visualisierung von Dämpfung
+        \item Dezibel:
+    \end{itemize}
+    \begin{equation*}
+        V^* = 20 \log_{10} \left( \frac{U_2}{U_1} \right) 
+    \end{equation*}
+\end{frame}
+\begin{frame}
+\frametitle{Aufgabe 2}
+\framesubtitle{Frequenzfilter}
+    \begin{itemize}
+        \item Hoch-,Tief-,Sperr-,Bandpassfilter
+        \item Unterdrückung von Frequenzbereichen
+        \item Ordnung gibt an wie stark die Dämpfung ausfällt: 1. Ordnung:
+        $6db$ pro Oktave, 2. Ordnung $12dB$ pro Oktave etc.
+        \item nichtlineares Verhalten
+    \end{itemize}
 \end{frame}
 \begin{frame}
 \frametitle{Aufgabe 2}
@@ -93,7 +93,7 @@
 \begin{itemize}
     \item $3dB$-Frequenz: linearer Abfall des Signals
     \item $\frac{U_{in}}{U_{out}}=\frac{1}{\sqrt{2}}$
-    \item Theoretischer Grenzfrequenz: $f_{c_T} = \frac{1}{2 \pi C R} \approx
+    \item Theoretische Grenzfrequenz: $f_{c_T} = \frac{1}{2 \pi C R} \approx
     1591.55Hz$
     \item Aus Bode Diagramm bei $dB=3.185845$: $f_{c_T} \approx 1656 Hz$
 \end{itemize}
@@ -165,7 +165,7 @@
          \item Erwarteter Verlauf: 
      \end{itemize}
      \begin{equation*}
-            \varphi = \arctan \left( \frac{1}{\omega C} \right)
+            \varphi = \arctan \left( \frac{1}{\omega C R} \right)
      \end{equation*}
 \end{frame}
 \begin{frame}
@@ -184,9 +184,9 @@
         \item Theoretische Grenzfrequenz: $f_{c_T} = \frac{1}{2 \pi C
         R}=1591.55Hz$ 
         \item Aus Bode Diagramm bei $dB=-3.398500$: $f_{c_T} \approx 1656 Hz$
-        \item Fit Wert: $-18.08 \frac{dB}{Dekade}= -5.42 \frac{dB}{Oktave}$
+        \item Fit Wert: $18.08 \frac{dB}{Dekade}= 5.42 \frac{dB}{Oktave}$
         \item Theoretischer Wert:
-        $-20\frac{dB}{\text{Dekade}}=-6\frac{dB}{\text{Oktave}}$
+        $20\frac{dB}{\text{Dekade}}=6\frac{dB}{\text{Oktave}}$
      \end{itemize}
 \end{frame}
 \begin{frame}

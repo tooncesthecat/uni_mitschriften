@@ -29,7 +29,7 @@
     \begin{itemize}
         \item Problem: Erdschleife
         \item Lösung: Erdungen aufeinander legen
-        \item Abfall über Bauteil: "Math function 1 - 2"
+        \item Abfall über Bauteil: "Math function 2 - 1"
     \end{itemize}
     \begin{figure}[H]
     \begin{center}
@@ -50,7 +50,7 @@
 \begin{tabular}{c|| c | c | c}
     & $I$ & $U$ & $\varphi$ \\
     \hline
-    Kondensator & $113 \mu A$ & $167mV$ & $-87^{\circ}$ \\
+    Kondensator ($100nF$)& $113 \mu A$ & $167mV$ & $-87^{\circ}$ \\
 \end{tabular}
 \end{center}
 \end{frame}
@@ -67,8 +67,8 @@
 \begin{tabular}{c|| c | c | c}
     & $I$ & $U$ & $\varphi$ \\
     \hline
-    Kondensator & $113 \mu A$ & $167mV$ & $-87^{\circ}$ \\
-    Spule & $139 \mu A$ & $95 mV$ & $72^{\circ}$ 
+    Kondensator ($100nF$)& $113 \mu A$ & $167mV$ & $-87^{\circ}$ \\
+    Spule ($100mH$)& $139 \mu A$ & $95 mV$ & $72^{\circ}$ 
 \end{tabular}
 \end{center}
 \end{frame}
@@ -85,9 +85,9 @@
 \begin{tabular}{c|| c | c | c}
     & $I$ & $U$ & $\varphi$ \\
     \hline
-    Kondensator & $113 \mu A$ & $167mV$ & $-87^{\circ}$ \\
-    Spule & $139 \mu A$ & $95 mV$ & $72^{\circ}$  \\
-    Widerstand & $104 \mu A$ & $100 mV$ & $4^{\circ}$
+    Kondensator ($100nF$)& $113 \mu A$ & $167mV$ & $-87^{\circ}$ \\
+    Spule ($100mH$)& $139 \mu A$ & $95 mV$ & $72^{\circ}$  \\
+    Widerstand ($1k\Omega$)& $104 \mu A$ & $100 mV$ & $4^{\circ}$
 \end{tabular}
 \end{center}
 \end{frame}
@@ -98,11 +98,15 @@
     \item Komplexer Widerstand: $Z = \frac{U}{I} \left( \cos (\varphi) + i \sin
     (\varphi) \right) $
 \end{itemize}
-\begin{align*}
-    Z_C &\approx 77.35 - i475.85 \Omega \\
-    Z_L &\approx 211.20 - i650.00 \Omega \\
-    Z_R &\approx 968.51 - i 67.72 \Omega 
-\end{align*}
+\begin{center}
+\begin{tabular}{c|c|c}
+    &   Messwert &  Theorie \\
+    \hline
+    $Z_C$ & $77.35 - i1475.85$ \Omega& $-i1592 \Omega$\\
+    $Z_L$ & $211.20 + i650.00$ \Omega& $i629\Omega$ \\
+    $Z_R$ & $968.51 - i 67.72$ \Omega& $1k\Omega$
+\end{tabular}
+\end{center}
 \pause
 \begin{itemize}
     \item $C = -i \frac{1}{2\pi f Z_C}$ und $L = \frac{Z_L}{i2\pi f}$:
