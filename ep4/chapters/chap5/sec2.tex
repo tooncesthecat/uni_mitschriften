@@ -22,10 +22,191 @@ emittierten Strahlungsleistung:
 \end{equation*}
 mit $S_{\nu} = S_{\nu} \lk \nu \Omega \rk = c \cd \mu_{\nu} \lk \nu \Omega \rk $
 der spektralen Strahlungsdichte des Hohlraums. Mit $A_{\nu} =1 $ folgt $E_{\nu}
-= S_{\nu}$. D.h. durch Messung der aus dem Lich austretenden STrahlungsleistung
+= S_{\nu}$. D.h. durch Messung der aus dem Licht austretenden Strahlungsleistung
 $E_{\nu}$ lässt sich die Energiedichte $\mu_{\nu} = \frac{S_{\mu}}{c}$ im
-Inneren des schwarzen Körpers bestimmen.
+Inneren des schwarzen Körpers bestimmen. 
 
+In einem Hohlraum können dauerhaft nur Wellen oszillieren, bei denen ein
+Vielfaches der halben Wellenlange gleich der Länge des Hohlraums ist
+(Eigenmoden/Eigenschwingungen):
+\begin{equation*}
+    n_i =  \frac{\lambda}{L_i} \qquad (i = x,y,z)
+\end{equation*}
+bzw.
+\begin{equation*}
+    k_i = \frac{2\pi}{\lambda}=n_i \frac{\pi}{L}
+\end{equation*}
+\begin{beis}
+    $n_x = 4$    
+    %BILD
+\end{beis}
+Wie viele solcher Eigenmoden können in einem kubischen Resonator mit
+Kantenlängen $L=L_x=L_y=L_y$ existierien? Im $\vec{k}$-Raum enstrpechen die erlaubten
+Eigenmoden diskreten Punkten, die ein Gitter mit Gitterkonstanten
+$\frac{\pi}{L}$ (im positiven Oktanden) bestehen. Pro Einheitsvolumen im
+$\vec{k}$-Raum
+befinden sich $\lk \frac{\pi}{L}\rk^{-3}$ erlaubter $k$-Werte, in einer Kugel
+mit Radius $k_6$ also
+\begin{equation*}
+    \frac{1}{8}\frac{4}{3}\pi k_6^3 \lk \frac{L^3}{\pi^3} \rk 
+    = \frac{1}{6}k_6^3 \frac{V}{\pi^2}
+\end{equation*}
+erlaubter $k$-Werte. Da jede Mode zwei unabhangige Polarisationsrichtungen hat,
+befinden sich in dieser Kugel also insgesamt $2 \cd \frac{1}{6} k_6^3
+\frac{V}{\pi^2}= \frac{k_6^3}{3}\frac{V}{\pi^2}$ solcher Moden. die Zahl der
+moden pro Volumeneinheit $k<k_6$ ist also
+\begin{equation*}
+    n= \frac{N}{V}= \frac{k_6^3}{3\pi^2}=\frac{8\pi\nu^3}{3c^3}
+\end{equation*}
+d.h. im Frequenzintervall $d\nu$ befinden sich folgende Anzahl von Moden:
+    \begin{equation*}
+    \boxed{
+        n_{\nu} d\nu 
+        =
+        \frac{d n}{d \nu} d\nu = \frac{8 \pi \nu^2}{c^3} d\nu
+        }
+    \end{equation*}
+Die spektrale Enegiedichte $\mu_{\nu}$ ergibt sich daraus zu:
+\begin{equation*}
+    \mu_{\nu} d \nu = n_{\nu} \bar{W_{\nu}(T)} d\nu
+\end{equation*}
+%ORDENTLICHE BARS
+mit $\bar{W_{\nu}(T)}$ der von der Temperatur abhängigen mittleren Energie pro
+Mode im Frequenzintervall $\left[ \nu, \nu+d\nu\right]$. Rayleigh und James
+ordneten $1894$ jeder Eigenschwingung wie beim klassichen harminischen
+Oszillator) die mittlere Energie $k_B T$ zu.
+\begin{equation*}
+\tag*{\text{(Rayleigh-Jeansches Strahlungsgesetz)}}
+\boxed{
+    \mu_{\nu} d\nu = \frac{8\pi\nu^2}{c^2}k_B T d\nu
+    }
+\end{equation*}
+Aus dem Loch des Hohlraums würde also die Strahlungsleistung:
+\begin{equation*}
+    S_{\nu} d\nu d\Omega 
+    =
+    c \mu_{\nu} d\nu \frac{d\Omega}{4\pi}
+    =
+    c \frac{1}{4\pi} \frac{8\pi\nu^3}{c^3}k_B T d\nu d\Omega
+\end{equation*}
+also
+\begin{equation*}
+    \boxed{
+    S_{\nu} d\nu d\Omega 
+    =
+    \frac{2\nu^2}{c^2} k_B T d\nu d\Omega
+    }
+\end{equation*}
+emittiert werden. Für niederige Frequenzen ergibt sich gute Übereinstimmung mi
+den experimentellen Ergebnissen, für hohe Frequenzen treten große Diskrepanzen
+auf, für $v\rar \infty$ divergiert $S_{\nu}$ sogar (Ultraviolett-Katastrophe).
+
+Max Planck ($1858$-$1947$) lößte dieses Problem indem er $1900$ annahm, dass
+jede Eigenmode Energie nicht in beliebig kleinen Beträgen besitzt, sondern nur
+in diskreten Werten ("Energiequanten"). Diese hängen von der Grequenz der
+Eigenmode ab und sind immer ganzzahlige Vielfache von $h \cd \nu$, dem
+kleinstmöglichen Energiequant (=Photon). Die Energie einer eigenschwingung mit
+$n$ Photonen der Frequenz $\nu$ ist demnach:
+\begin{equation*}
+    \tag*{(Planck'sches Wirkungsquantum)}
+    \boxed{
+    E_n = n \cd h \nu
+    }
+    \quad
+    \text{mit}
+    \quad
+    \boxed{
+        h=6.625 \cd 10^{-34} Js
+    }
+\end{equation*}
+Im thermischen Gleichgewicht ist die Wahrschenilichkeit $P(E)$, dass eine
+Eigenmode die Energie $E_n$ besitzt, durch den Boltzmanfaktor
+$e^{-\frac{E_n}{k_B T}}$ gegeben, die normierte Wahrscheinlichkeit also durch
+\begin{equation*}
+    P(E_n)
+    =
+    \frac{e^{-\frac{n h \nu}{k_B T}}}{\sum_{n=0}^{\infty}e^{-\frac{n h \nu}{k_B T}}}
+\end{equation*}
+(mit $\sum p(E_n) =1$)
+Die mittlere Energie pro Eigenmode ergibt sich damit zu
+\begin{equation*}
+    \bar{E}_n
+    =
+    \sum_{n=0}^{\infty} E_n p(E_n)
+    =
+    \frac{\sum n k \nu e^{-\frac{nh\nu}{k_B Ta}}}{\sum e^{-\frac{nh\nu}{k_B Ta}}}
+\end{equation*}
+\begin{equation*}
+    E_n = \frac{1}{e^{-\frac{nh\nu}{k_B Ta}}-1}
+\end{equation*}
+\begin{erl}{Beweis}
+(mit $\beta = \frac{1}{k_B T}$)
+\begin{enumerate}
+    \item 
+    \begin{equation*}
+        \sum_{n=0}^\infty e^{-n h \nu \beta}
+        =
+        \frac{1}{1- e^{-h\nu\beta}}\qquad \text{(mit $\sum_{n=0}^N x^n =
+        \frac{1-x^{N+1}}{1-x}$)}
+    \end{equation*}
+    \item
+    \begin{align*}
+        \sum_0^{\infty} n h \nu e^{-n h \nu \beta}
+        &=
+        - \frac{\p}{\p \beta} \lk \sum_{n=0}^{\infty} e^{-n h \nu \beta} \rk
+        \\
+        &=
+        - \frac{\p}{\p \beta} \lk \frac{1}{1-e^{-h \nu \beta}} \rk \\
+        &=
+        \frac{h \mu e^{-h \nu \beta}}{\lk 1 - e^{-h \nu \beta} \rk^2}
+    \end{align*}
+\end{enumerate}
+also
+\begin{equation*}
+    \bar{E}_n = \frac{(2)}{(1)}= \frac{h\nu}{e^{\frac{h \nu}{k_B T}} -1}
+\end{equation*}
+\end{erl}
+Daraus folgt die spektrale Energiedichte dr Hohlraumstrahlung:
+\begin{equation*}
+    \tag*{\text{(Plansch'sches Strahlungsgesetz)}}
+    \boxed{ 
+    \mu_{\nu} (\nu) d\nu =
+    \frac{8 \pi \nu^2}{c^3} \frac{h \nu}{e^{\frac{h \nu}{k_B T}}-1} d\nu
+    }
+\end{equation*}
+Die aus dem Loch des Hohlraums emittierte Strahlungsleistung ergibt sich daraus
+zu:
+\begin{gather*}
+    S_{\nu} d\nu d\Omega = c \cd \frac{d\Omega}{4\pi} \frac{8 \pi h \nu^3}{c^3}
+    \frac{d\nu}{e^{\frac{h\nu}{k_B T} -1}} \\
+    \rar \boxed{
+        S_{\nu} d\nu d\Omega 
+        =
+        \frac{2 h \nu^3}{c^2} \frac{d\nu d\Omega}{e^{\frac{h\nu}{k_B T}}-1}
+        }
+\end{gather*}
+in sehr guter Übereinstimmung mit dem Experiment
+\begin{erl}{Bemerkung}
+Die gesamte Energiedichte strahlung ist
+\begin{align*}
+    \mu(T)
+    &=
+    \int_{v=0}^{\infty} \mu_{\nu} (v,T) d\nu
+    =
+    \frac{8 \pi h}{c^3} \int \frac{\nu^3}{e^{\frac{h \nu}{k_B T}}-1} d\nu \\
+    &=
+    \frac{8\pi^5 k_B^4}{15 h^3 c^3}\cdot T^4 = a \cd T^4  
+\end{align*}
+Die von dem Oberflächenelement in $d\Omega$ emittierte Strahlung ist also
+\begin{equation*}
+    S(T) = c \cd a \cd T^4 \frac{d\Omega}{4\pi} \cos \vartheta
+\end{equation*}
+d.h die Strahlungsleistung pro Flachenelement in dem gesamten Hohlraum ist
+\begin{equation*}
+   I = \int S(T) d\Omega = \sigma \cd T^4 \qquad \text{ mit $\sigma = \frac{2\pi^5
+   k_B^4}{15c^2 h^3} = 5.67 \cd 10^{-8} \frac{1}{K^4}\frac{W}{m^2}$}
+\end{equation*}
+\end{erl}
 
 % subsection Herleitung der Strahlungsleistung eines schwarzen Körpers durch Plan (end)
 % section Die Hohlraumstrahlung (end)
