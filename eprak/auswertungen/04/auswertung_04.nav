@@ -91,11 +91,11 @@
 \headcommand {\beamer@framepages {43}{43}}
 \headcommand {\slideentry {4}{0}{39}{44/44}{}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {4}{0}{40}{45/45}{}{0}}
+\headcommand {\sectionentry {5}{EKG-Verst\IeC {\"a}rkerschaltung}{45}{EKG-Verst\IeC {\"a}rkerschaltung}{0}}
+\headcommand {\beamer@sectionpages {37}{44}}
+\headcommand {\beamer@subsectionpages {37}{44}}
+\headcommand {\slideentry {5}{0}{40}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\sectionentry {5}{EKG-Verst\IeC {\"a}rkerschaltung}{46}{EKG-Verst\IeC {\"a}rkerschaltung}{0}}
-\headcommand {\beamer@sectionpages {37}{45}}
-\headcommand {\beamer@subsectionpages {37}{45}}
 \headcommand {\slideentry {5}{0}{41}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
 \headcommand {\slideentry {5}{0}{42}{47/47}{}{0}}
@@ -104,38 +104,42 @@
 \headcommand {\beamer@framepages {48}{48}}
 \headcommand {\slideentry {5}{0}{44}{49/49}{}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\slideentry {5}{0}{45}{52/52}{}{0}}
+\headcommand {\slideentry {5}{0}{45}{50/50}{}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\slideentry {5}{0}{46}{51/51}{}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\slideentry {5}{0}{47}{52/52}{}{0}}
 \headcommand {\beamer@framepages {52}{52}}
-\headcommand {\slideentry {5}{0}{46}{54/54}{}{0}}
+\headcommand {\sectionentry {6}{Komparator}{53}{Komparator}{0}}
+\headcommand {\beamer@sectionpages {45}{52}}
+\headcommand {\beamer@subsectionpages {45}{52}}
+\headcommand {\slideentry {6}{0}{48}{53/53}{}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\slideentry {6}{0}{49}{54/54}{}{0}}
 \headcommand {\beamer@framepages {54}{54}}
-\headcommand {\sectionentry {6}{Komparator}{55}{Komparator}{0}}
-\headcommand {\beamer@sectionpages {46}{54}}
-\headcommand {\beamer@subsectionpages {46}{54}}
-\headcommand {\slideentry {6}{0}{47}{55/55}{}{0}}
+\headcommand {\slideentry {6}{0}{50}{55/55}{}{0}}
 \headcommand {\beamer@framepages {55}{55}}
-\headcommand {\slideentry {6}{0}{48}{56/56}{}{0}}
+\headcommand {\slideentry {6}{0}{51}{56/56}{}{0}}
 \headcommand {\beamer@framepages {56}{56}}
-\headcommand {\slideentry {6}{0}{49}{57/57}{}{0}}
+\headcommand {\slideentry {6}{0}{52}{57/57}{}{0}}
 \headcommand {\beamer@framepages {57}{57}}
-\headcommand {\slideentry {6}{0}{50}{58/58}{}{0}}
+\headcommand {\slideentry {6}{0}{53}{58/58}{}{0}}
 \headcommand {\beamer@framepages {58}{58}}
-\headcommand {\slideentry {6}{0}{51}{59/59}{}{0}}
+\headcommand {\slideentry {6}{0}{54}{59/59}{}{0}}
 \headcommand {\beamer@framepages {59}{59}}
-\headcommand {\slideentry {6}{0}{52}{60/60}{}{0}}
+\headcommand {\slideentry {6}{0}{55}{60/60}{}{0}}
 \headcommand {\beamer@framepages {60}{60}}
-\headcommand {\slideentry {6}{0}{53}{61/61}{}{0}}
+\headcommand {\slideentry {6}{0}{56}{61/61}{}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {6}{0}{54}{62/62}{}{0}}
+\headcommand {\sectionentry {7}{Verst\IeC {\"a}rkerschaltung mit Komperator}{62}{Verst\IeC {\"a}rkerschaltung mit Komperator}{0}}
+\headcommand {\beamer@sectionpages {53}{61}}
+\headcommand {\beamer@subsectionpages {53}{61}}
+\headcommand {\slideentry {7}{0}{57}{62/62}{}{0}}
 \headcommand {\beamer@framepages {62}{62}}
-\headcommand {\slideentry {6}{0}{55}{63/63}{}{0}}
+\headcommand {\slideentry {7}{0}{58}{63/63}{}{0}}
 \headcommand {\beamer@framepages {63}{63}}
-\headcommand {\sectionentry {7}{Verst\IeC {\"a}rkerschaltung mit Komperator}{64}{Verst\IeC {\"a}rkerschaltung mit Komperator}{0}}
-\headcommand {\beamer@sectionpages {55}{63}}
-\headcommand {\beamer@subsectionpages {55}{63}}
-\headcommand {\slideentry {7}{0}{56}{64/64}{}{0}}
-\headcommand {\beamer@framepages {64}{64}}
-\headcommand {\beamer@partpages {1}{64}}
-\headcommand {\beamer@subsectionpages {64}{64}}
-\headcommand {\beamer@sectionpages {64}{64}}
-\headcommand {\beamer@documentpages {64}}
-\headcommand {\def \inserttotalframenumber {56}}
+\headcommand {\beamer@partpages {1}{63}}
+\headcommand {\beamer@subsectionpages {62}{63}}
+\headcommand {\beamer@sectionpages {62}{63}}
+\headcommand {\beamer@documentpages {63}}
+\headcommand {\def \inserttotalframenumber {58}}
