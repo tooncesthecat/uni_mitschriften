@@ -1,0 +1,42 @@
+\beamer@endinputifotherversion {3.33pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {1}{Sensoren}{3}{Sensoren}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Einf\IeC {\"u}hrung}}\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{Einf\IeC {\"u}hrung}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{5}{Temperatursensoren: PTC- und NTC-Thermistoren}}\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {1}{2}{1}{5/5}{Temperatursensoren: PTC- und NTC-Thermistoren}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {1}{2}{2}{6/8}{Temperatursensoren: PTC- und NTC-Thermistoren}{0}}
+\headcommand {\beamer@framepages {6}{8}}
+\headcommand {\slideentry {1}{2}{3}{9/9}{Temperatursensoren: PTC- und NTC-Thermistoren}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {1}{2}{4}{10/11}{Temperatursensoren: PTC- und NTC-Thermistoren}{0}}
+\headcommand {\beamer@framepages {10}{11}}
+\headcommand {\slideentry {1}{2}{5}{12/12}{Temperatursensoren: PTC- und NTC-Thermistoren}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {1}{2}{6}{13/13}{Temperatursensoren: PTC- und NTC-Thermistoren}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{14}{LDR (light dependent resistor)}}\headcommand {\beamer@subsectionpages {5}{13}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{14}{Photodiode}}\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{1}{5}{14}{Druck-/Kraftsensor}}\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\sectionentry {2}{PID-Regler}{14}{PID-Regler}{0}}
+\headcommand {\beamer@sectionpages {3}{13}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\slideentry {2}{0}{1}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{15}{Einf\IeC {\"u}hrung}}\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\slideentry {2}{1}{1}{15/15}{Einf\IeC {\"u}hrung}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@partpages {1}{15}}
+\headcommand {\beamer@subsectionpages {16}{15}}
+\headcommand {\beamer@sectionpages {14}{15}}
+\headcommand {\beamer@documentpages {15}}
+\headcommand {\def \inserttotalframenumber {12}}
