@@ -1,7 +1,10 @@
-\beamer@slide {sec:Aufbau_eines_Lock-In_Verst\IeC {\"a}rkers}{4}
-\beamer@slide {sub:Phasenschieber}{4}
-\beamer@slide {sub:Komparatorenschaltung}{10}
-\beamer@slide {sub:Eingangsverst\IeC {\"a}rker}{13}
-\beamer@slide {sub:Analogschalter}{16}
-\beamer@slide {sec:Test_und_Andwendung_des_Lock-In-Verst\IeC {\"a}rkers}{18}
-\beamer@slide {sub:Erster Funktionstest}{18}
+\beamer@slide {sec:Einf\IeC {\"u}hrung}{4}
+\beamer@slide {sub:Ziel des Versuchs:}{4}
+\beamer@slide {sec:Aufbau_eines_Lock-In_Verst\IeC {\"a}rkers}{12}
+\beamer@slide {sub:Phasenschieber}{12}
+\beamer@slide {sub:Komparatorenschaltung}{17}
+\beamer@slide {sub:Eingangsverst\IeC {\"a}rker}{20}
+\beamer@slide {sub:Analogschalter}{23}
+\beamer@slide {sec:Test_und_Andwendung_des_Lock-In-Verst\IeC {\"a}rkers}{25}
+\beamer@slide {sub:Erster Funktionstest}{25}
+\beamer@slide {sub:\IeC {\"U}bertragung eines Lichtsignals}{29}

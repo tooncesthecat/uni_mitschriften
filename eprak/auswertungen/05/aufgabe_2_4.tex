@@ -1,4 +1,72 @@
 \subsection{PI-Regler} % (fold)
 \label{sub:PI-Regler}
+\begin{frame}
+    \frametitle{PI-Regler}
+    \framesubtitle{}
+    \begin{block}{Versuchsziel}
+         \begin{itemize}
+             \item Untersuchung der PI-Funktion
+             \item Variation von $k_p$
+         \end{itemize}
+    \end{block}
+\end{frame}
+\begin{frame}
+    \frametitle{Messung}
+    \framesubtitle{}
+    \begin{columns}[c]
+        \column{0.5\textwidth}
+        \begin{block}{Beobachtung}
+            \begin{itemize}
+                \item Solltemperatur wird nach ca. 55 Sek erreicht
+                \item besseres Ergebnis als nur durch P oder I
+            \end{itemize}    
+        \end{block}
+        \begin{block}{Regelung}
+            \begin{itemize}
+                \item P-Regelung zum stellen Ansteuern
+                \item I-Regelung zur "Feineinstellung"
+            \end{itemize}
+        \end{block}
+        \column{0.5\textwidth}
+        \begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.3]{./img/plots/2d_kb_0_1_t_200.eps}
+        \end{center}
+        \end{figure}
+        \begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.3]{./img/plots/2d_kb_0_1_t_200_aus.eps}
+        \end{center}
+        \end{figure}
+    \end{columns}
+\end{frame}
+\begin{frame}
+    \frametitle{Verschieden $k_p$ Werte}
+    \framesubtitle{}
+    \begin{columns}[c]
+        \column{0.5\textwidth}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.3]{./img/plots/2d_kb_0_5_t_200.eps}
+            \end{center}
+            \end{figure}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.3]{./img/plots/2d_kb_0_8_t_200.eps}
+            \end{center}
+            \end{figure}
+        \column{0.5\textwidth}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.3]{./img/plots/2d_kb_1_5_t_200.eps}
+            \end{center}
+            \end{figure}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.3]{./img/plots/2d_kb_2_t_200_aus.eps}
+            \end{center}
+            \end{figure}
+    \end{columns}
+\end{frame}
 
 % subsection PI-Regler (end)

@@ -1,8 +1,30 @@
 \subsection{Einführung} % (fold)
 \label{sub:Einführung}
 \begin{frame}
-    \frametitle{Versuchsziel:}
+    \frametitle{Einführung:}
     \framesubtitle{}
+    \begin{block}{Wiederholung PID-Regler}
+         \begin{itemize}
+             \item P:
+             \begin{equation*}
+                 P = k_p (W-X)
+             \end{equation*}
+             \item I
+             \begin{equation*}
+                 I=\frac{1}{t_i} \int_0^t (W-X) dt'
+             \end{equation*}
+             \item D
+             \begin{equation*}
+                 D=t_d \frac{d (W-X)}{dt}
+             \end{equation*}
+         \end{itemize}
+    \end{block}
+    \begin{block}{Versuchsziel}
+         \begin{itemize}
+             \item Untersuchen bei manueller Regelung
+             \item Untersuchen der P-, I-, D-Anteile der Rückkopplung
+         \end{itemize}
+    \end{block}
 \end{frame}
 
 % subsection Einführung (end)

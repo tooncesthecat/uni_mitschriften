@@ -1,0 +1,76 @@
+\section{Der photoelektrische Effekt} % (fold)
+\label{sec:Der_photoelektrische_Effekt}
+Bestrahlt man eine negativ aufgeladene Platte aus Metall mit UV-Licht, nimtt
+die Ladung auf der Platte ab. Es müssen also $e^-$ die Platte verlassen.
+\subsection{Klassische Erklärung} % (fold)
+\label{sub:Klassische_Erklärung}
+Im klassichen Wellenmodell sollte die auf die Fläche $F$ auftreffende
+Strahlungsleistung $P=I\cd F$ gleichäßig auf alle $e^-$ verteilt werden. Bei
+einer Eindringtiefe von $\sim \lambda$ im Metall und einer
+Leitungs-$e^-$-Dichte von $n=\frac{10^{19}}{m^3}$ würde jedes $e^-$ im mittel
+in der Zeit $\Delta t$ die Energie $\bar{\Delta W}$ aufnehmen:
+\begin{equation*}
+    \bar{\Delta W} = \frac{p}{n F \lambda} \cd \Delta t 
+    =
+    \frac{I}{n \lambda} \cd \Delta t
+\end{equation*}
+% subsection Klassische Erklärung (end)
+und erst für den Fall $\bar{\Delta W} > W_A$ (=Austrittsarbeit) emittiert
+werden.
+\begin{beis}
+    Zink: $W_a \sim 4eV$ und eine Quelle bi $\lambda \simeq 250nm$ mit $P=1W$
+    im abstand von $1m$ von der zinkplatter egibt sich $\Delta \sim 10^5 s$ 
+\end{beis}
+Mit einer Gegenfeld-Methode kann man die maximale kinetische Energie der
+emittierten $e^-$ $E_{kin}^{max}$ messen. die negative spannung an der anode
+($-U_0$) bei der $I_{ph}$ einsetzt gibt an, gegen welche spannung die $e^-$
+gerade noch anlaufen können. Dabei stellt sich heraus:
+\begin{itemize}
+    \item $E_{kin}^{max} = e U_{max}$ hängt nur von der Frequenz des UV-Lichts,
+    nicht von seiner Intensität ab
+    \item nur die Zahl der Photoelektronen, also $I_{ph}^{max}$, hängt von $I$
+    ab
+    \item
+    trägt man $E_{kin}^{max}=e U_{max}$ gegen die Frequenz $\nu$ auf, ergibt
+    sich eine Gerade
+\end{itemize}
+Einstein erklärte $1905$ die experimentellen Ergebnisse mit seiner
+\begin{erl}{Lichtquanten-Hypothese}
+    Jedes absorbierte Photon gibt Energie $h\nu$ vollständig an ein
+    Photoelektron ab ("jeder Elementarprozess der Absorption und emission von
+    Strahlung durch ein Atom erfolgt als 'gerichteter Vorgang'")
+\end{erl}
+Aus dem Energiesatz folgt:
+\begin{equation*}
+    E_{kin}^{max} = h\nu - W_A
+\end{equation*}
+mit $W_A$ der Austrittsarbeit des Kathodenmaterieals. Die Steigung der Geraden
+ist also $h$ aus dem Achstenabschnitt bei $\nu = 0$ erhält man $W_A$.
+\\
+Die Unzulänglichkeit des Wellenmodells besteht also darin, dass in ihm die
+Strahlungsenergie nicht auf ein einzelnes Atom oder Elektron übertragen wird.
+Der Widerspruch, der sog. Welle-Teilchen-Dualismus, wird in Abschnitt $V 5$
+noch genauer behandelt.
+\subsection{Photonenimpuls und Laserkühlung} % (fold)
+\label{sub:Photonenimpuls und Laserkühlung}
+In dem Artikel von $1917$ forderte Einstein, dass be dem Elementarprozess der
+Absorption und Emission von Strahlung durch die Atome nicht nur als gerichtete
+Größe die Energe $h \nu$, sondern auch ein Impuls auf die Atome übertragen
+wird. Dieser Impuls, der relativistisch dem Betrag $p = \frac{E}{c}$
+entspricht, wird such auf die äußeren Freiheitsgrade der Atome auswirken.
+\begin{erl}{Bemerkung:}
+    relativistisch gilt: 
+    \begin{equation*}
+        E = \sqrt{p^2 c^2 + m_0^2 c^4}
+    \end{equation*}
+    mit $m_0=0$ $\rar$ $p=\frac{E}{c}$
+    \begin{gather*}
+        \rar p = \frac{E}{c}= \frac{h\nu}{c} = \frac{h}{\lambda} \\
+        \rar \vec{p} = \hb \vec{k}
+    \end{gather*}
+    $\rar$ Lichtdruckkraft zur Laserkühlung!
+\end{erl}
+
+% subsection Photonenimpuls und Laserkühlung (end)
+
+% section Der photoelektrische Effekt (end)

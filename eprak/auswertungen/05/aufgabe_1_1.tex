@@ -1,7 +1,7 @@
 \subsection{Temperatursensoren: PTC- und NTC-Thermistoren} % (fold)
 \label{sub:Temperatursensoren: PTC- und NTC-Thermistoren}
 \begin{frame}
-    \frametitle{Aufgabenstellung}
+    \frametitle{Thermistoren}
     \framesubtitle{}
     \begin{columns}[c]
         \column{0.6\textwidth}
@@ -18,12 +18,7 @@
         \column{0.4\textwidth}
             \begin{figure}[H]
             \begin{center}
-                    \includegraphics[scale=0.2]{.img/misc/thermistor_ptc.jpg}
-            \end{center}
-            \end{figure}
-            \begin{figure}[H]
-            \begin{center}
-                    \includegraphics[scale=0.2]{.img/misc/thermistor_ntc.jpg}
+                   \includegraphics[scale=0.3]{./img/misc/thermistor.jpg}
             \end{center}
             \end{figure}
     \end{columns}
@@ -58,12 +53,12 @@
     \frametitle{Bestimmung der Temperatur}
     \framesubtitle{}
     \begin{center}
-        \begin{tabular}{c|c}
-            Thermistor & $R_{DMM}/k\Omega$ \\
+        \begin{tabular}{c|c|c}
+            Thermistor & $R_{DMM}/k\Omega$ & $T/^{\circ}C$\\
             \hline
-            PTC1000 & $1.10$\\
-            PTC100 & $0.11$\\
-            NTC: M87/G350 10k & $10.5$
+            PTC1000 & $1.10$&$26$\\
+            PTC100 & $0.11$&$26.85$ \\
+            NTC: M87/G350 10k & $10.5$&$25$
         \end{tabular}
     \end{center}
 \end{frame}
@@ -92,24 +87,44 @@
     \frametitle{Anschluss an Konstantstromquelle}
     \framesubtitle{}
         \begin{center}
-            \begin{tabular}{c|c|c|c}
-                Thermistor & $U/V$ & $I/A$ & $R_{ber}/k\Omega$ \\
+            \begin{tabular}{c|c|c|c|c}
+                Thermistor & $U/V$ & $I/A$ & $R_{ber}/k\Omega$ & $T_{ber}/^{\circ}C$ \\
                 \hline
-                PTC1000 & $12.5$  & $0.010$ & 1.25\\
-                PTC100  & $1.16$  & $0.0.10$ & 0.16\\
-                NTC: M87/G350 10k & $16.8$ & $0.010$ & 1.68 \\
+                PTC1000 & $12.5$  & $0.010$ & $1.25$ &$64$\\
+                PTC100  & $1.16$  & $0.010$ & $0.12$ &$41.85$\\
+                NTC: M87/G350 10k & $16.8$ & $0.010$ & $1.68$ &$80$
             \end{tabular}
         \end{center}
+        \begin{block}{}
+            Konstantstrom erwärmt Widerstände $\rightarrow$ ungeeignet!
+        \end{block}
+        \begin{block}{Verhalten des NTCs:}
+            \begin{itemize}
+                \item 
+                \begin{itemize}
+                    \item U steigt auf $23V$
+                    \item I steigt bis $10mA$
+                    \item danach Abfall auf Messerte
+                \end{itemize}
+                \item Erklärung: Aufwärmphase in der NTC höheren Widerstand hat
+            \end{itemize}
+        \end{block}
 \end{frame}
 \begin{frame}
     \frametitle{Auswertung}
     \framesubtitle{}
     \begin{tabular}{c|c|c||c|c|c}
-        Thermistor & $R_{DMM}/k\Omega$ & Reibung & $U/V$ & $I/A$ & $R_{ber}/\Omega$ \\
+        Thermistor & $R_{DMM}/k\Omega$ & $T_{DMM}/^{\circ}C$ & $R_{ber}/\Omega$
+        &$T_{ber}/^{\circ}C$\\
         \hline
-        PTC1000 & $1.10$ & $R$ steigt&  $12.5$&                $0.010$ & 1.25\\           
-        PTC100 & $0.11$ &  $R$ steigt&  $1.16$&                $0.0.10$ & 0.16\\
-        NTC: M87& $10.5$ & $R$ sinkt &     $16.8$ & $0.010$ & 1.68 
+        PTC1000 & $1.10$ & $26$ & 1.25 &$64$\\           
+        PTC100  & $0.11$ & $26.85$ & 0.12 &$41.85$\\
+        NTC: M87& $10.5$ & $25$ & 1.68 &$80$
     \end{tabular}
+    \begin{block}{Messung des Widerstands}
+         \begin{itemize}
+             \item Konstantstromquelle
+         \end{itemize}
+    \end{block}
 \end{frame}
 % subsection Temperatursensoren: PTC- und NTC-Thermistoren (end)

@@ -174,6 +174,64 @@ Daraus folgt die spektrale Energiedichte dr Hohlraumstrahlung:
     \frac{8 \pi \nu^2}{c^3} \frac{h \nu}{e^{\frac{h \nu}{k_B T}}-1} d\nu
     }
 \end{equation*}
+\begin{bem}
+    \item
+    Für $h \nu \ll k_B T$ kann man den Nenner entwickeln zu 
+    \begin{gather*}
+       e^{\frac{h\nu}{k_B T}} \simeq 1 + \frac{k\nu}{k_B T} + \ddots \\
+       e^{\frac{h\nu}{k_B T}} -1 \simeq \frac{k\nu}{k_B T} 
+    \end{gather*}
+    also
+    \begin{equation*}
+       \mu_{\nu} (\nu) = \frac{8\pi \nu^2}{c^3}k_B T \rightarrow \text{RJ!}
+    \end{equation*} 
+    d.h das R.J Gesetz entpuppt sich als Grenzfall des plank'schen
+    Strahlungsgesetzes für kleine $\nu$.
+    \item
+    das beste, je gemessene Spektrum eines schwarzen Strahlers ist die von
+    Reuzies und Wilson $1965$ enddeckte und $1995$ vom Satelliten Cobe
+    gemessene "kosmische Hintergrundstrahlung", d.h das "Nachglühen" der vor
+    ca. $13.7 Mrd$ Jahren in einem sog. "Big Bang" erfolgte Entstehung des
+    Universums.
+    \item
+    mit $\nu = \frac{c}{\lambda}$ und $d\nu = - \frac{\nu^2}{c}d\lambda$ kann
+    man das plank'sche Strahlungsgesetz auch schreiben
+    \begin{equation*}
+        \boxed{
+            u_{\lambda} d\lambda
+            =
+            \frac{8\pi h c}{\lambda^5} \frac{d\lambda}{e^{\frac{hc}{\lambda k_B
+            T}-1}}
+        }
+    \end{equation*}
+    Das Maximum dieser Verstärkung ergibt sich zu
+    \begin{equation*}
+        \lambda_{max} = \frac{2.88 \cd 10^{-3}}{T} K \cd m
+    \end{equation*}
+    also
+    \begin{equation*}
+        \tag*{(Wiensches Verschiebungsgesetz)}
+        \boxed{
+            \lambda_{max} \cd T = \const
+            }
+    \end{equation*}
+    \begin{quote}
+        "Das Maximum der Energiedichte bez. der emittierten Strahlungsleistung
+        eines schwarzen Körpers liegt bei einer Wellenlänge, deren Wert $\sim
+        \frac{1}{T}$ ist."
+    \end{quote}
+    \item
+    Die gesamte Energiedichte der Hohlraumstrahlung ist:
+    \begin{equation*}
+        u(T) = \int_{v=0}^{\infty} u_{\nu} (\nu,T) d\nu
+        =
+        \frac{8 \pi \h}{c^3} \int_0^{\infty} \frac{\nu^3}{e^{\frac{h\nu}{k_B
+        T}}-1} d\nu
+    \end{equation*}
+    \begin{equation*}= \frac{8\pi^5 k_B}{15 k^3 c^3 }T^4 = T^4
+        \rightarrw u(T) 
+    \end{equation*}
+\end{bem}
 Die aus dem Loch des Hohlraums emittierte Strahlungsleistung ergibt sich daraus
 zu:
 \begin{gather*}
@@ -187,7 +245,7 @@ zu:
 \end{gather*}
 in sehr guter Übereinstimmung mit dem Experiment
 \begin{erl}{Bemerkung}
-Die gesamte Energiedichte strahlung ist
+Die gesamte Energiedichtestrahlung ist
 \begin{align*}
     \mu(T)
     &=
@@ -207,6 +265,59 @@ d.h die Strahlungsleistung pro Flachenelement in dem gesamten Hohlraum ist
    k_B^4}{15c^2 h^3} = 5.67 \cd 10^{-8} \frac{1}{K^4}\frac{W}{m^2}$}
 \end{equation*}
 \end{erl}
-
 % subsection Herleitung der Strahlungsleistung eines schwarzen Körpers durch Plan (end)
+\subsection{Herleitung der Planckschen Strahlungsformel nach Einstein} % (fold)
+\label{sub:Herleitung_der_Planckschen_Strahlungsformel_nach_Einstein}
+Max Planck ordnete $1900$ den Schwingungen des elektromagnetischen Feldes
+diskrete Energiewerte zu. dies war ein mathematsiches Konstrukt, mit dem er die
+ERgebnisse quantitativ verfizieren konnte. Einstein ging darüber hinaus und
+ordneete den Energiequanten eine reelle Existenz zu, als sog. Photonen.
+
+Er postulierte damit, dass Licht uaus Teilchen besteht ($\rightarrow$
+Photoeffekt), d.h dass jede Welle der Frequenz $\nu$ eine anzahl von Photonen
+der Eneregie $h \nu$ und den Impuls
+\begin{equation*}
+    \vec{p} = \hb \vec{k} = \frac{h}{2\pi} \vec{k}
+\end{equation*}
+besitzt. $1917$ leitete er das Planckesche Strahlungsgesetz aus der Annahme
+her, dass sich Licht eines schwarzen Körpers im thermischen Gleichgewicht mit
+den Wanden des schwarzen Körpers befindet, in dem die Atome Photonen
+absorbieren und emittieren ($\rar$ erste quantale Beschreibung der
+Licht-Materie-Wechselwirkung). Die Atome besitzen hierbei diskrete
+Energieniveaus $E_1$ und $E_2$ mit $E_2 - E_1 = \Delta E = h\nu$.
+\\
+Drei Prozesse beschreiben die Wechselwirkung der Materie mit der
+elektromagnetischen Strahlung
+\begin{itemize}
+    \item Absorption eines Photons
+    \item spontante Emission (nach natürlicher Lebensdauer in $E_2$ 
+    \item induzierte/stimulierte Emission (von Einstein einfgeführt)
+\end{itemize}
+Gegeben sei für ein System von $N_1$ Atomen in $E_1$ und $N_2$ Atomen in $E_2$
+(mit $N_1 + N_2 = N$) im thermischen Gleichgewicht mit der Strahlung:
+\\
+Anzahl der Übergänge von $1 \rar 2$:
+\begin{equation*}
+     \dot{N}_{12} = B_{12} \cd u(\nu) \cd N_1
+\end{equation*}
+Anzahl der Übergänge von $2 \rar 1$:
+\begin{equation*}
+    \dot{N}_{21} = B_{21} u(\nu) \cd N_2 + A_{21} \cd N_2
+\end{equation*}
+mit $B_{12}$,$B_{21}$ und $A_{21}$ den entsprechenden Übergangsraten der
+oben genannten Prozesse (=Einstein-Koeffizienten). Im thermischen Gleichgewicht
+ist $\dot{N}_{12} = \dot{N}_{21}$ und
+\begin{equation*}
+    \frac{N_2}{N_1} = e^{-\frac{E_2 - E_1}{k_B T} = e^{-\frac{h\nu}{k_B T}}
+\end{equation*}
+\begin{equation*}
+    u{\nu}
+    =
+     \frac{A_{21}}{B_{12} e^{\frac{h\nu}{k_B T}} - B_{21}}
+    =
+    \ddots
+    =
+    \frac{8 \pi h \nu^3}{c^3} \frac{1}{e^{\frac{h\nu}{k_B T}}}
+\end{equation*}
+% subsection Herleitung der Planckschen Strahlungsformel nach Einstein (end)
 % section Die Hohlraumstrahlung (end)

@@ -2,7 +2,14 @@
 \beamer@slide {sub:Einf\IeC {\"u}hrung}{4}
 \beamer@slide {sub:Temperatursensoren: PTC- und NTC-Thermistoren}{5}
 \beamer@slide {sub:LDR_(light_dependent_resistor}{14}
-\beamer@slide {sub:Photodiode}{14}
-\beamer@slide {sub:Druck-/Kraftsensor}{14}
-\beamer@slide {sec:PID-Regler}{15}
-\beamer@slide {sub:Einf\IeC {\"u}hrung}{15}
+\beamer@slide {sub:Photodiode}{18}
+\beamer@slide {sub:Druck-/Kraftsensor}{21}
+\beamer@slide {sec:PID-Regler}{25}
+\beamer@slide {sub:Einf\IeC {\"u}hrung}{25}
+\beamer@slide {sub:Manuelle_REgelung:_Kriterien_f\IeC {\"u}r_die_Bestimmung_der_Stellgr\IeC {\"o}\IeC {\ss }e}{26}
+\beamer@slide {sub:P-Regler}{27}
+\beamer@slide {sub:I-Regler}{32}
+\beamer@slide {sub:PI-Regler}{35}
+\beamer@slide {sub:D-Regler}{38}
+\beamer@slide {sub:PD-Regler}{40}
+\beamer@slide {sub:PID-Regler}{42}

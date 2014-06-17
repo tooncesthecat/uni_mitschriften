@@ -1,4 +1,72 @@
 \subsection{PID-Regler} % (fold)
 \label{sub:PID-Regler}
-
+\begin{frame}
+    \frametitle{PID-Regler}
+    \framesubtitle{}
+    \begin{block}{Versuch}
+         \begin{itemize}
+             \item Verhalten mit Ziegler/Nichols Parameter
+             \item Verhalten mit/ohne anti-wind-up
+             \item Reaktion auf Störung
+         \end{itemize}
+    \end{block}
+\end{frame}
+\begin{frame}
+\frametitle{Ziegler/Nichols}
+\framesubtitle{}
+    \begin{columns}[c]
+        \column{0.5\textwidth}
+        \begin{block}{Werte}
+             \begin{itemize}
+                 \item $k_p=3$,$t_i=2.5$,$t_d=0,6$
+                 \item Einschwingzeit $60-55$: $T_{60,55} =51s$
+                 \item Einschwingzeit $55-60$: $T_{55,60} =39s$
+             \end{itemize}
+        \end{block}
+        \column{0.5\textwidth}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.3]{./img/plots/2g.eps}
+            \end{center}
+            \end{figure}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.3]{./img/plots/2g_aus.eps}
+            \end{center}
+            \end{figure}
+    \end{columns}
+\end{frame}
+\begin{frame}
+    \frametitle{Einschwingverhalten ohne/mit anti-wind-up}
+    \framesubtitle{}
+        \begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.3]{./img/plots/2g_schwing.eps}
+        \end{center}
+        \end{figure}
+        \begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.3]{./img/plots/2g_schwing_int.eps}
+        \end{center}
+        \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Störung}
+    \framesubtitle{}
+    \begin{columns}[c]
+        \column{0.5\textwidth}
+            \begin{block}{Einschwingzeit}
+                 \begin{itemize}
+                     \item mit $k_p=1$,$t_i =1.5$,$t_d = 0.3$ Verbesserung der
+                     Eingschwingzeit auf $6s$.
+                 \end{itemize}
+            \end{block}
+        \column{0.5\textwidth}
+        \begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.4]{./img/plots/2g_blow.eps}
+        \end{center}
+        \end{figure}
+    \end{columns}   
+\end{frame}
 % subsection PID-Regler (end)
