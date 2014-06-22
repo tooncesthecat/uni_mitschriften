@@ -93,33 +93,35 @@
 \headcommand {\beamer@framepages {38}{38}}
 \headcommand {\slideentry {3}{3}{2}{39/39}{D-Latch}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{40}{Flankengetriggertes D-Latch}}\headcommand {\beamer@subsectionpages {38}{39}}
-\headcommand {\slideentry {3}{4}{1}{40/40}{Flankengetriggertes D-Latch}{0}}
+\headcommand {\slideentry {3}{3}{3}{40/40}{D-Latch}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {3}{4}{2}{41/41}{Flankengetriggertes D-Latch}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{41}{Flankengetriggertes D-Latch}}\headcommand {\beamer@subsectionpages {38}{40}}
+\headcommand {\slideentry {3}{4}{1}{41/41}{Flankengetriggertes D-Latch}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\sectionentry {4}{Z\IeC {\"a}hler}{42}{Z\IeC {\"a}hler}{0}}
-\headcommand {\beamer@sectionpages {33}{41}}
-\headcommand {\beamer@subsectionpages {40}{41}}
-\headcommand {\slideentry {4}{0}{3}{42/42}{}{0}}
+\headcommand {\slideentry {3}{4}{2}{42/42}{Flankengetriggertes D-Latch}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {4}{0}{4}{43/43}{}{0}}
+\headcommand {\sectionentry {4}{Z\IeC {\"a}hler}{43}{Z\IeC {\"a}hler}{0}}
+\headcommand {\beamer@sectionpages {33}{42}}
+\headcommand {\beamer@subsectionpages {41}{42}}
+\headcommand {\slideentry {4}{0}{3}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {4}{0}{5}{44/44}{}{0}}
+\headcommand {\slideentry {4}{0}{4}{44/44}{}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\sectionentry {5}{Binary code decimal und 7-Segment Anzeige}{45}{Binary code decimal und 7-Segment Anzeige}{0}}
-\headcommand {\beamer@sectionpages {42}{44}}
-\headcommand {\beamer@subsectionpages {42}{44}}
-\headcommand {\slideentry {5}{0}{6}{45/45}{}{0}}
+\headcommand {\slideentry {4}{0}{5}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {5}{0}{7}{46/46}{}{0}}
+\headcommand {\sectionentry {5}{Binary code decimal und 7-Segment Anzeige}{46}{Binary code decimal und 7-Segment Anzeige}{0}}
+\headcommand {\beamer@sectionpages {43}{45}}
+\headcommand {\beamer@subsectionpages {43}{45}}
+\headcommand {\slideentry {5}{0}{6}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {5}{0}{8}{47/47}{}{0}}
+\headcommand {\slideentry {5}{0}{7}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\slideentry {5}{0}{9}{48/48}{}{0}}
+\headcommand {\slideentry {5}{0}{8}{48/48}{}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\beamer@partpages {1}{48}}
-\headcommand {\beamer@subsectionpages {45}{48}}
-\headcommand {\beamer@sectionpages {45}{48}}
-\headcommand {\beamer@documentpages {48}}
-\headcommand {\def \inserttotalframenumber {47}}
+\headcommand {\slideentry {5}{0}{9}{49/49}{}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\beamer@partpages {1}{49}}
+\headcommand {\beamer@subsectionpages {46}{49}}
+\headcommand {\beamer@sectionpages {46}{49}}
+\headcommand {\beamer@documentpages {49}}
+\headcommand {\def \inserttotalframenumber {48}}
