@@ -1,0 +1,34 @@
+0 - Aufgabe 2a 1V
+1 - Aufgabe 2a 2V
+2 - Aufgabe 2a 3V
+3 - Aufgabe 2a 4V
+4 - Aufgabe 2a 4,75V
+5 - Aufgabe 2b 4V
+6 - Aufgabe 2b sukz 4V
+7 - Aufgabe 2b 1V
+8 - Aufgabe 2b 1V sukz
+9 - Aufgabe 3 2V
+10 - Aufgabe 3 1V
+11 - Aufgabe 3 4V
+12 - Aufgabe 3 Pullup entfernt
+13 - Aufgabe 3 Wandlung
+14 - Aufgabe 4 FFT
+15 - Aufgabe 4 FFT 2
+16 - Aufgabe 4 FFT 3
+17 - Aufgabe 4a FFT absteigend
+18 - Mit MSB
+19 - ohne MSB
+20 - Aufgabe 4b 500Hz
+21 - Aufgabe 4b 100Hz
+22 - Aufgabe 4b 800Hz
+23 - Aufgabe 4b 1500Hz
+24 - Aufgabe 4b 2300Hz
+25 - Aufgabe 4b 2700Hz
+26 - Aufgabe 4b 2900Hz
+27 - Aufgabe 4b 3500Hz
+28 - Aufgabe 4b 5000Hz
+29 - Aufgabe 4b 18000Hz
+30 - Mit Tiefpass 100Hz
+31 - Mit Tiefpass 700Hz
+32 - Mit Tiefpass 1500Hz
+33 - Mit Tiefpass 2800Hz

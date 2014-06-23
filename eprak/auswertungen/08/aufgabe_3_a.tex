@@ -1,4 +1,136 @@
-\subsection{A/D-wandlerchip ADC0804} % (fold)
-\label{sub:A/D-wandlerchip_ADC0804}
+\subsection{A/D-Wandlerchip ADC0804} % (fold)
+\label{sub:A/D-Wandlerchip_ADC0804}
+\begin{frame}
+    \frametitle{A/D Wandlerchip}
+    \framesubtitle{}
+    \begin{figure}[H]
+    \begin{center}
+            \includegraphics[scale=0.4]{./img/schaltung/ADWandler_0.png}
+    \end{center}
+    \end{figure}
+\end{frame}
 
-% subsection A/D-wandlerchip ADC0804 (end)
+\begin{frame}
+    \frametitle{Theorie}
+    \framesubtitle{}
+    \begin{block}{Theoretischer Wert}
+        \begin{itemize}
+            \item Aufteilung der Spannung $V_{cc}$ in 255 Teile
+        \end{itemize}
+            \begin{gather*}
+                U_{out} = \frac{n}{255} \cdot V_{cc} \\
+                n = \left\lfloor \frac{U_{out}}{V_{cc}} \cdot 255 \right\rfloor
+            \end{gather*}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Messwerte}
+    \framesubtitle{}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.2]{./img/oszi/scope_10.png}
+            \end{center}
+            \end{figure}
+            \begin{center}
+            \boxed{
+                \begin{tabular}{c|c|c|c}
+                    $U$ & Bin & Dez & Theorie\\
+                    \hline
+                    $1V$ & $00110011$ & $51$ & $51$
+                \end{tabular}
+                }
+            \end{center}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Messwerte}
+    \framesubtitle{}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.2]{./img/oszi/scope_9.png}
+            \end{center}
+            \end{figure}
+            \begin{center}
+            \boxed{
+                \begin{tabular}{c|c|c|c}
+                $U$ & Binl & Dez & Theorie\\
+                \hline
+                $1V$ & $00110011$ & $51$ & $51$ \\
+                $2V$ & $01100111$ & $103$ & $102$ 
+                \end{tabular}
+                }
+            \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Messwerte}
+    \framesubtitle{}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.18]{./img/oszi/scope_11.png}
+            \end{center}
+            \end{figure}
+            \begin{center}
+            \boxed{
+                \begin{tabular}{c|c|c|c}
+                $U$ & Bin & Dez & Theorie\\
+                \hline
+                $1V$ & $00110011$ & $51$ &$51$\\
+                $2V$ & $01100111$ & $103$&$102$ \\
+                $3V$ & $10011010$ & $154$&$153$ 
+                \end{tabular}
+                }
+            \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Umbau}
+    \framesubtitle{}
+    \begin{columns}[c]
+        \column{0.4\textwidth}
+            \begin{block}{}
+                \begin{itemize}
+                    \item Widerstand zwischen $20$ und $3$ wird zwischen $3$ und $5$
+                    eingebaut
+                    \item sobal INTR Spannung ausgibt wird der Wandlungsprozess
+                    durch WR neu gestartet
+                    \item geeignet für Wechselspannung
+                \end{itemize}
+            \end{block}
+        \column{0.6\textwidth}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.12]{./img/oszi/scope_12.png}
+            \end{center}
+            \end{figure}
+            \begin{figure}[H]
+            \begin{center}
+                    %\includegraphics[scale=0.1]{./img/schaltung/ADC_0.png}
+            \end{center}
+            \end{figure}
+    \end{columns}
+\end{frame}
+\begin{frame}
+    \frametitle{Wandlungsrate}
+    \framesubtitle{}
+    \begin{columns}[c]
+        \column{0.5\textwidth}
+            \begin{block}{Wandlungsrate}
+                \begin{itemize}
+                    \item Aus Messung:  
+                    \begin{equation*}
+                        \omega_{exp} = 5.7kHz
+                    \end{equation*}
+                    \item Theoriewert:
+                \end{itemize}
+            \end{block}
+        \column{0.5\textwidth}
+            \begin{figure}[H]
+            \begin{center}
+                    \includegraphics[scale=0.15]{./img/oszi/scope_13.png}
+            \end{center}
+            \end{figure}
+    \end{columns}
+\end{frame}

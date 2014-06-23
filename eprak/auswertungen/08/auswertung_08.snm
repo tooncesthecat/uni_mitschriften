@@ -1,8 +1,2 @@
-\beamer@slide {sec:Digital-zu-Analog-Wandler_(DAC)}{4}
-\beamer@slide {sub:R-2R-Netzwerk}{4}
-\beamer@slide {sub:DAC-Chip_DAC0909}{5}
-\beamer@slide {sec:Analog-zu-Digital-Wandler_(ADC}{6}
-\beamer@slide {sub:Manuelle_Analog-zu-Digital-Wandlung}{6}
-\beamer@slide {sub:Computergest\IeC {\"u}tzte_Analog-zu-Digital-Wandlung}{6}
-\beamer@slide {sec:A/D-Wandlerchip_ADC0804}{7}
-\beamer@slide {sub:A/D-wandlerchip_ADC0804}{7}
+\beamer@slide {sec:A/D-Wandlerchip_ADC0804}{4}
+\beamer@slide {sub:A/D-Wandlerchip_ADC0804}{4}
