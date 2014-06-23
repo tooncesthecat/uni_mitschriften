@@ -1,2 +1,11 @@
-\beamer@slide {sec:A/D-Wandlerchip_ADC0804}{4}
-\beamer@slide {sub:A/D-Wandlerchip_ADC0804}{4}
+\beamer@slide {sec:Digital-zu-Analog-Wandler_(DAC)}{4}
+\beamer@slide {sub:R-2R-Netzwerk}{4}
+\beamer@slide {sub:DAC-Chip_DAC0909}{9}
+\beamer@slide {sec:Analog-zu-Digital-Wandler_(ADC}{13}
+\beamer@slide {sub:Manuelle_Analog-zu-Digital-Wandlung}{13}
+\beamer@slide {sub:Computergest\IeC {\"u}tzte_Analog-zu-Digital-Wandlung}{19}
+\beamer@slide {sec:A/D-Wandlerchip_ADC0804}{24}
+\beamer@slide {sub:A/D-Wandlerchip_ADC0804}{24}
+\beamer@slide {sec:A/D-D/A-Wandlerstrecke}{38}
+\beamer@slide {sub:Aufl\IeC {\"o}sung_und_Bitfehler}{40}
+\beamer@slide {sub:Shannon-Nyquist-Abtasttheorem}{41}

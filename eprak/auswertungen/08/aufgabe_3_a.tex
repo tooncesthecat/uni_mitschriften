@@ -113,6 +113,69 @@
     \end{columns}
 \end{frame}
 \begin{frame}
+    \frametitle{Sinusfunktion}
+    \framesubtitle{100Hz}
+     \begin{figure}[H]
+     \begin{center}
+             \includegraphics[scale=0.5]{./img/graph/Aufgabe3_100hz_N.eps}
+     \end{center}
+     \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Sinusfunktion}
+    \framesubtitle{1kHz}
+     \begin{figure}[H]
+     \begin{center}
+             \includegraphics[scale=0.5]{./img/graph/Aufgabe3_1khz_N.eps}
+     \end{center}
+     \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Sinusfunktion}
+    \framesubtitle{4khz}
+     \begin{figure}[H]
+     \begin{center}
+             \includegraphics[scale=0.5]{./img/graph/Aufgabe3_4khz_N.eps}
+     \end{center}
+     \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Sinusfunktion}
+    \framesubtitle{10kHz}
+     \begin{figure}[H]
+     \begin{center}
+             \includegraphics[scale=0.5]{./img/graph/Aufgabe3_10khz_N.eps}
+     \end{center}
+     \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Ergebnis}
+    \framesubtitle{}
+    \begin{columns}[c]
+        \column{0.5\textwidth}
+             \begin{figure}[H]
+             \begin{center}
+                     \includegraphics[scale=0.3]{./img/graph/Aufgabe3_100hz_N.eps}
+             \end{center}
+             \caption{100Hz}
+             \end{figure}
+        \column{0.5\textwidth}
+             \begin{figure}[H]
+             \begin{center}
+                     \includegraphics[scale=0.3]{./img/graph/Aufgabe3_10khz_N.eps}
+             \end{center}
+             \caption{10kHz}
+             \end{figure}
+    \end{columns}
+     \begin{block}{}
+         \begin{itemize}
+             \item Je höher die Referenzfrequenz, desto Ungenauer wird die
+             Wandlung
+             \item Kurve kann nicht mehr ausreichend abgetastet werden
+         \end{itemize}
+     \end{block}
+\end{frame}
+\begin{frame}
     \frametitle{Wandlungsrate}
     \framesubtitle{}
     \begin{columns}[c]
@@ -121,9 +184,8 @@
                 \begin{itemize}
                     \item Aus Messung:  
                     \begin{equation*}
-                        \omega_{exp} = 5.7kHz
+                        f_s = 5.7kHz
                     \end{equation*}
-                    \item Theoriewert:
                 \end{itemize}
             \end{block}
         \column{0.5\textwidth}
@@ -133,4 +195,27 @@
             \end{center}
             \end{figure}
     \end{columns}
+\end{frame}
+\begin{frame}
+    \frametitle{Störung}
+    \framesubtitle{}
+    \begin{columns}[c]
+        \column{0.4\textwidth}
+            \begin{block}{}
+                \begin{equation*}
+                    f_s = \frac{1}{1.1 \cdot R \cdot C}
+                \end{equation*}
+            \begin{itemize}
+                \item Körperkontakt verringert Kapazität $\rightarrow$
+                Vergrößerung der Abtastrate
+            \end{itemize}
+            \end{block}
+        \column{0.6\textwidth}
+        \begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.4]{./img/graph/Aufgabe3_Druck_N.eps}
+        \end{center}
+        \end{figure}
+    \end{columns}
+    
 \end{frame}
